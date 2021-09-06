@@ -1,0 +1,101 @@
+<div style="padding: 15px 15px 0px 15px; border-left: 2px solid #ccc">
+  <button class="btn btn-primary" (click)="createAnswer()">
+    Create answer
+  </button>
+
+  <div *ngFor="let answer of answers" style="margin-top: 5px">
+    <div class="form-group">
+      <div class="input-group">
+        <div class="input-group-prepend">
+          <div class="input-group-text">Answer</div>
+        </div>
+        <input
+          type="text"
+          placeholder="Enter answer text"
+          class="form-control"
+          [(ngModel)]="answer.text"
+        />
+        <div class="input-group-append">
+          <button class="btn btn-primary" (click)="createNextDialog(answer)">
+            Create next dialog
+          </button>
+        </div>
+      </div>
+    </div>
+    <div
+      class="form-group"
+      style="padding: 15px 15px 0px 15px; border-left: 2px solid #ccc"
+    >
+      <div class="input-group">
+        <div class="input-group-prepend">
+          <div class="input-group-text">Economy</div>
+        </div>
+        <input
+          type="text"
+          placeholder="Enter economy impact"
+          class="form-control"
+          [(ngModel)]="answer.outcome.economy"
+        />
+      </div>
+      <div class="input-group">
+        <div class="input-group-prepend">
+          <div class="input-group-text">Dtrength</div>
+        </div>
+        <input
+          type="text"
+          placeholder="Enter strength impact"
+          class="form-control"
+          [(ngModel)]="answer.outcome.strength"
+        />
+      </div>
+      <div class="input-group">
+        <div class="input-group-prepend">
+          <div class="input-group-text">Happiness</div>
+        </div>
+        <input
+          type="text"
+          placeholder="Enter happiness impact"
+          class="form-control"
+          [(ngModel)]="answer.outcome.happiness"
+        />
+      </div>
+      <div class="input-group">
+        <div class="input-group-prepend">
+          <div class="input-group-text">Bank</div>
+        </div>
+        <input
+          type="text"
+          placeholder="Enter bank impact"
+          class="form-control"
+          [(ngModel)]="answer.outcome.bank"
+        />
+      </div>
+      <div class="input-group">
+        <div class="input-group-prepend">
+          <div class="input-group-text">Religion</div>
+        </div>
+        <input
+          type="text"
+          placeholder="Enter religion impact"
+          class="form-control"
+          [(ngModel)]="answer.outcome.religion"
+        />
+      </div>
+      <div class="input-group">
+        <div class="input-group-prepend">
+          <div class="input-group-text">Civilization</div>
+        </div>
+        <input
+          type="text"
+          placeholder="Enter civilization impact"
+          class="form-control"
+          [(ngModel)]="answer.outcome.civilization"
+        />
+      </div>
+    </div>
+    <app-dialog
+      *ngIf="answer.nextDialog"
+      [dialog]="answer.nextDialog"
+    ></app-dialog>
+  </div>
+</div>

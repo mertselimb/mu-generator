@@ -1,0 +1,42 @@
+<div style="padding: 15px 15px 0px 15px; border-left: 2px solid #ccc">
+  <button class="btn btn-success" (click)="createReaction()">
+    Create reaction
+  </button>
+  <div *ngFor="let reaction of reactions" style="margin-top: 5px">
+    <div class="form-group">
+      <div class="input-group">
+        <div class="input-group-prepend">
+          <div class="input-group-text">Sender</div>
+        </div>
+        <input
+          type="text"
+          placeholder="Enter reaction sender"
+          class="form-control"
+          [(ngModel)]="reaction.sender"
+        />
+      </div>
+      <div class="input-group">
+        <div class="input-group-prepend">
+          <div class="input-group-text">Type</div>
+        </div>
+        <input
+          type="text"
+          placeholder="Enter reaction type"
+          class="form-control"
+          [(ngModel)]="reaction.type"
+        />
+      </div>
+      <div class="input-group">
+        <div class="input-group-prepend">
+          <div class="input-group-text">Text</div>
+        </div>
+        <input
+          type="text"
+          placeholder="Enter reaction text"
+          class="form-control"
+          [(ngModel)]="reaction.text"
+        />
+      </div>
+    </div>
+  </div>
+</div>

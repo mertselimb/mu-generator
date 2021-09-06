@@ -1,0 +1,17 @@
+<div style="padding: 15px 15px 0px 15px; border-left: 2px solid #ccc">
+  <div class="form-group">
+    <div class="input-group mb-2">
+      <div class="input-group-prepend">
+        <div class="input-group-text">Id</div>
+      </div>
+      <input
+        type="text"
+        placeholder="Enter id"
+        class="form-control"
+        [(ngModel)]="dialog.id"
+      />
+    </div>
+  </div>
+  <app-reactions [reactions]="dialog.reactions"></app-reactions>
+  <app-answers [answers]="dialog.answers"></app-answers>
+</div>

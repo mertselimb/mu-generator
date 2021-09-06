@@ -1,0 +1,14 @@
+<h1>Mu Story Generator V1</h1>
+
+<app-dialog [dialog]="dialog"></app-dialog>
+
+<div class="form-group" style="margin-top: 15px">
+  <div class="input-group">
+    <div class="input-group-prepend">
+      <button class="btn btn-success" (click)="logDialog()">
+        Generate JSON
+      </button>
+    </div>
+    <input type="text" class="form-control" [(ngModel)]="dialogJson" />
+  </div>
+</div>
