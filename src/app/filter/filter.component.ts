@@ -14,7 +14,10 @@ export class FilterComponent implements OnInit {
   ngOnInit(): void {}
 
   createFilter(): void {
-    if (this.filters)
+    if (this.filters) {
       this.filters.push({ amount: 50, stat: 'economy', type: 'more' });
+    } else {
+      this.filters = [{ amount: 50, stat: 'economy', type: 'more' }];
+    }
   }
 }

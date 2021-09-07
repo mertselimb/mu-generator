@@ -19,12 +19,10 @@
         <div class="input-group-prepend">
           <div class="input-group-text">Type</div>
         </div>
-        <input
-          type="text"
-          placeholder="Enter reaction type"
-          class="form-control"
-          [(ngModel)]="reaction.type"
-        />
+        <select class="form-select" [(ngModel)]="reaction.type">
+          <option>left</option>
+          <option>image</option>
+        </select>
       </div>
       <div class="input-group">
         <div class="input-group-prepend">
