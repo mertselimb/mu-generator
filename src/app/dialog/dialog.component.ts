@@ -1,5 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { Dialog } from './dialog';
+import { Dialog } from '../dataModels/dialog';
 
 @Component({
   selector: 'app-dialog',
@@ -7,15 +7,14 @@ import { Dialog } from './dialog';
   styleUrls: ['./dialog.component.css'],
 })
 export class DialogComponent implements OnInit {
-  @Input() dialog: Dialog = { id: '', answers: [], reactions: [] };
+  @Input() dialogs: Dialog[] = [{ id: '', answers: [], reactions: [] }];
 
   constructor() {}
 
   ngOnInit(): void {
-    this.dialog.id = this.makeRandom(
-      20,
-      'abcdefghijklmnoprstuvyz1234567890'
-    );
+    this.dialogs.forEach((dialog) => {
+      dialog.id = this.makeRandom(20, 'abcdefghijklmnoprstuvyz1234567890');
+    });
   }
 
   makeRandom(lengthOfCode: number, possible: string) {

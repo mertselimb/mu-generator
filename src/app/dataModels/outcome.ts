@@ -1,4 +1,4 @@
-export interface Outcome {
+export interface Stats {
   economy?: number;
   strength?: number;
   happiness?: number;

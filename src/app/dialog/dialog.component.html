@@ -1,17 +1,23 @@
 <div style="padding: 15px 15px 0px 15px; border-left: 2px solid #ccc">
-  <div class="form-group">
-    <div class="input-group mb-2">
-      <div class="input-group-prepend">
-        <div class="input-group-text">Id</div>
+  <div *ngFor="let dialog of dialogs">
+    <div class="form-group">
+      <div class="input-group mb-2">
+        <div class="input-group-prepend">
+          <div class="input-group-text">Id</div>
+        </div>
+        <input
+          type="text"
+          placeholder="Enter id"
+          class="form-control"
+          [(ngModel)]="dialog.id"
+        />
       </div>
-      <input
-        type="text"
-        placeholder="Enter id"
-        class="form-control"
-        [(ngModel)]="dialog.id"
-      />
     </div>
+    <h3>Reactions</h3>
+    <app-reactions [reactions]="dialog.reactions"></app-reactions>
+    <h3>Answers</h3>
+    <app-answers [answers]="dialog.answers"></app-answers>
+    <h3>Filters</h3>
+    <app-filter [filters]="dialog.filter"></app-filter>
   </div>
-  <app-reactions [reactions]="dialog.reactions"></app-reactions>
-  <app-answers [answers]="dialog.answers"></app-answers>
 </div>

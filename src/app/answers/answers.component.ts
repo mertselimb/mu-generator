@@ -1,5 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { Answer } from './answer';
+import { Answer } from '../dataModels/answer';
 
 @Component({
   selector: 'app-answers',
@@ -8,8 +8,6 @@ import { Answer } from './answer';
 })
 export class AnswersComponent implements OnInit {
   @Input() answers: Answer[] = [];
-  constructor() {}
-
   ngOnInit(): void {}
 
   createAnswer(): void {
@@ -17,10 +15,20 @@ export class AnswersComponent implements OnInit {
   }
 
   createNextDialog(answer: Answer): void {
-    answer.nextDialog = {
-      id: '',
-      answers: [],
-      reactions: [],
-    };
+    if (answer.nextDialog) {
+      answer.nextDialog.push({
+        id: '',
+        answers: [],
+        reactions: [],
+      });
+    } else {
+      answer.nextDialog = [
+        {
+          id: '',
+          answers: [],
+          reactions: [],
+        },
+      ];
+    }
   }
 }

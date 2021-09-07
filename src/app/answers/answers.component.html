@@ -31,7 +31,7 @@
           <div class="input-group-text">Economy</div>
         </div>
         <input
-          type="text"
+          type="number"
           placeholder="Enter economy impact"
           class="form-control"
           [(ngModel)]="answer.outcome.economy"
@@ -39,10 +39,10 @@
       </div>
       <div class="input-group">
         <div class="input-group-prepend">
-          <div class="input-group-text">Dtrength</div>
+          <div class="input-group-text">Strength</div>
         </div>
         <input
-          type="text"
+          type="number"
           placeholder="Enter strength impact"
           class="form-control"
           [(ngModel)]="answer.outcome.strength"
@@ -53,7 +53,7 @@
           <div class="input-group-text">Happiness</div>
         </div>
         <input
-          type="text"
+          type="number"
           placeholder="Enter happiness impact"
           class="form-control"
           [(ngModel)]="answer.outcome.happiness"
@@ -64,7 +64,7 @@
           <div class="input-group-text">Bank</div>
         </div>
         <input
-          type="text"
+          type="number"
           placeholder="Enter bank impact"
           class="form-control"
           [(ngModel)]="answer.outcome.bank"
@@ -75,7 +75,7 @@
           <div class="input-group-text">Religion</div>
         </div>
         <input
-          type="text"
+          type="number"
           placeholder="Enter religion impact"
           class="form-control"
           [(ngModel)]="answer.outcome.religion"
@@ -86,7 +86,7 @@
           <div class="input-group-text">Civilization</div>
         </div>
         <input
-          type="text"
+          type="number"
           placeholder="Enter civilization impact"
           class="form-control"
           [(ngModel)]="answer.outcome.civilization"
@@ -95,7 +95,7 @@
     </div>
     <app-dialog
       *ngIf="answer.nextDialog"
-      [dialog]="answer.nextDialog"
+      [dialogs]="answer.nextDialog"
     ></app-dialog>
   </div>
 </div>

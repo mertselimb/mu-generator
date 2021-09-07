@@ -1,5 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { Reaction } from '../form/reaction';
+import { Reaction } from '../dataModels/reaction';
 
 @Component({
   selector: 'app-reactions',

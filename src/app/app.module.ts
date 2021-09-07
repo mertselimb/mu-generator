@@ -7,6 +7,8 @@ import { FormsModule } from '@angular/forms';
 import { DialogComponent } from './dialog/dialog.component';
 import { ReactionsComponent } from './reactions/reactions.component';
 import { AnswersComponent } from './answers/answers.component';
+import { CommonModule } from '@angular/common';
+import { FilterComponent } from './filter/filter.component';
 
 @NgModule({
   declarations: [
@@ -16,8 +18,9 @@ import { AnswersComponent } from './answers/answers.component';
     DialogComponent,
     ReactionsComponent,
     AnswersComponent,
+    FilterComponent,
   ],
-  imports: [BrowserModule, NgbModule, FormsModule],
+  imports: [BrowserModule, NgbModule, FormsModule,CommonModule],
   providers: [],
   bootstrap: [AppComponent],
 })

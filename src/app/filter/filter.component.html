@@ -1,0 +1,42 @@
+<div style="padding: 15px 15px 0px 15px; border-left: 2px solid #ccc">
+  <button class="btn btn-warning" (click)="createFilter()">
+    Create filter
+  </button>
+  <div *ngFor="let filter of filters" style="margin-top: 5px">
+    <div class="form-group">
+      <div class="input-group">
+        <div class="input-group-prepend">
+          <div class="input-group-text">Type</div>
+        </div>
+        <select class="form-select" [(ngModel)]="filter.type">
+          <option>more</option>
+          <option>less</option>
+        </select>
+      </div>
+      <div class="input-group">
+        <div class="input-group-prepend">
+          <div class="input-group-text">Stat</div>
+        </div>
+        <select class="form-select" [(ngModel)]="filter.stat">
+          <option>economy</option>
+          <option>strength</option>
+          <option>happiness</option>
+          <option>bank</option>
+          <option>religion</option>
+          <option>civilization</option>
+        </select>
+      </div>
+      <div class="input-group">
+        <div class="input-group-prepend">
+          <div class="input-group-text">Amount</div>
+        </div>
+        <input
+          type="number"
+          placeholder="Enter filter amount"
+          class="form-control"
+          [(ngModel)]="filter.amount"
+        />
+      </div>
+    </div>
+  </div>
+</div>
