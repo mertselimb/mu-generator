@@ -8,13 +8,19 @@
         <div class="input-group-prepend">
           <div class="input-group-text">Sender</div>
         </div>
-        <input
-          type="text"
-          placeholder="Enter reaction sender"
-          class="form-control"
-          [(ngModel)]="reaction.sender"
-        />
+        <select class="form-select" [(ngModel)]="reaction.sender">
+          <option value="RepresentativeMatt">Representative Matt</option>
+          <option value="EngineerElon">Engineer Elon</option>
+          <option value="TeacherSnape">Teacher Snape</option>
+          <option value="Dr.Hugh">Dr.Hugh</option>
+          <option value="GeneralRoss">General Ross</option>
+          <option value="JudgeMary">Judge Mary</option>
+          <option value="Chad">Chad</option>
+          <option value="JanitorKen">Janitor Ken</option>
+          <option value="JournalistDonald">Journalist Donald</option>
+        </select>
       </div>
+
       <div class="input-group">
         <div class="input-group-prepend">
           <div class="input-group-text">Type</div>
