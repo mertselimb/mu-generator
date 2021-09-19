@@ -15,7 +15,8 @@ export class FormComponent implements OnInit {
   ngOnInit(): void {}
 
   logDialog(): void {
-    this.dialogJson = JSON.stringify(this.dialogs);
-    console.log(this.dialogs);
+    const jsonArray = JSON.stringify(this.dialogs);
+    this.dialogJson = jsonArray.substring(1, jsonArray.length - 1);
+    console.log(jsonArray);
   }
 }
