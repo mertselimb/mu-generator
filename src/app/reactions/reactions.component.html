@@ -12,6 +12,7 @@
           <option value="RepresentativeMatt">Representative Matt</option>
           <option value="EngineerElon">Engineer Elon</option>
           <option value="TeacherSnape">Teacher Snape</option>
+          <option value="EconomistDan">Economist Dan</option>
           <option value="Dr.Hugh">Dr.Hugh</option>
           <option value="GeneralRoss">General Ross</option>
           <option value="JudgeMary">Judge Mary</option>
@@ -39,6 +40,17 @@
           placeholder="Enter reaction text"
           class="form-control"
           [(ngModel)]="reaction.text"
+        />
+      </div>
+      <div class="input-group">
+        <div class="input-group-prepend">
+          <div class="input-group-text">Restriction</div>
+        </div>
+        <input
+          type="text"
+          placeholder="Enter reaction restriction"
+          class="form-control"
+          [(ngModel)]="reaction.restriction"
         />
       </div>
     </div>

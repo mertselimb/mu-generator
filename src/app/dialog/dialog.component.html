@@ -12,6 +12,17 @@
           [(ngModel)]="dialog.id"
         />
       </div>
+      <div class="input-group mb-2">
+        <div class="input-group-prepend">
+          <div class="input-group-text">Restriction</div>
+        </div>
+        <input
+          type="text"
+          placeholder="Enter restriction"
+          class="form-control"
+          [(ngModel)]="dialog.restriction"
+        />
+      </div>
     </div>
     <h3>Reactions</h3>
     <app-reactions [reactions]="dialog.reactions"></app-reactions>

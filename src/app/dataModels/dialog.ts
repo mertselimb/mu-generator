@@ -7,4 +7,5 @@ export interface Dialog {
   reactions: Reaction[];
   answers: Answer[];
   filter?: Filter[];
+  restriction?: string;
 }
