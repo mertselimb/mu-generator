@@ -1,0 +1,2 @@
+ng build --prod --base-href "https://mertselimb.github.io/mu-generator/"
+npx angular-cli-ghpages --dir=dist/mu-generator
