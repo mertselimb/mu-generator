@@ -13,6 +13,6 @@ export class ReactionsComponent implements OnInit {
   ngOnInit(): void {}
 
   createReaction(): void {
-    this.reactions.push({ sender: 'RepresentativeMatt', text: 'text', type: 'left' });
+    this.reactions.push({ sender: 'Representative', text: '', type: 'left' });
   }
 }

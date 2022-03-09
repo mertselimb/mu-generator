@@ -11,18 +11,18 @@ export class AnswersComponent implements OnInit {
   ngOnInit(): void {}
 
   createAnswer(): void {
-    this.answers.push({ text: 'Text', outcome: { economy: 0 } });
+    this.answers.push({ text: '', outcome: {  } });
   }
 
   createNextDialog(answer: Answer): void {
-    if (answer.nextDialog) {
-      answer.nextDialog.push({
+    if (answer.nextDialogs) {
+      answer.nextDialogs.push({
         id: '',
         answers: [],
         reactions: [],
       });
     } else {
-      answer.nextDialog = [
+      answer.nextDialogs = [
         {
           id: '',
           answers: [],
