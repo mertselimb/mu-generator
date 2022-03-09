@@ -26,6 +26,17 @@
       class="form-group"
       style="padding: 15px 15px 0px 15px; border-left: 2px solid #ccc"
     >
+      <div class="input-group" style="margin: 0 0 15px 0">
+        <div class="input-group-prepend">
+          <div>Is this a ending?</div>
+        </div>
+        <input
+          style="margin-left: 15px"
+          type="checkbox"
+          [checked]="answer.isEnd"
+          (change)="answer.isEnd = !answer.isEnd"
+        />
+      </div>
       <div class="input-group">
         <div class="input-group-prepend">
           <div class="input-group-text">Economy</div>

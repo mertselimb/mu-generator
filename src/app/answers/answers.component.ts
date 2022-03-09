@@ -8,10 +8,11 @@ import { Answer } from '../dataModels/answer';
 })
 export class AnswersComponent implements OnInit {
   @Input() answers: Answer[] = [];
+
   ngOnInit(): void {}
 
   createAnswer(): void {
-    this.answers.push({ text: '', outcome: {  } });
+    this.answers.push({ text: '', outcome: {}, isEnd: false });
   }
 
   createNextDialog(answer: Answer): void {
