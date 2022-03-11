@@ -16,20 +16,16 @@ export class AnswersComponent implements OnInit {
   }
 
   createNextDialog(answer: Answer): void {
+    const newDialog = {
+      id: '',
+      answers: [],
+      reactions: [],
+      priority: 0,
+    };
     if (answer.nextDialogs) {
-      answer.nextDialogs.push({
-        id: '',
-        answers: [],
-        reactions: [],
-      });
+      answer.nextDialogs.push(newDialog);
     } else {
-      answer.nextDialogs = [
-        {
-          id: '',
-          answers: [],
-          reactions: [],
-        },
-      ];
+      answer.nextDialogs = [newDialog];
     }
   }
 }

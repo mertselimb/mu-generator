@@ -7,7 +7,7 @@ import { Dialog } from '../dataModels/dialog';
   styleUrls: ['./form.component.css'],
 })
 export class FormComponent implements OnInit {
-  dialogs: Dialog[] = [{ id: '', answers: [], reactions: [] }];
+  dialogs: Dialog[] = [{ id: '', answers: [], reactions: [], priority: 0 }];
   dialogJson: string = '';
 
   constructor() {}
