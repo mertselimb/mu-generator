@@ -20,6 +20,7 @@ export class AnswersComponent implements OnInit {
       id: '',
       answers: [],
       reactions: [],
+      filter: [],
       priority: 0,
     };
     if (answer.nextDialogs) {

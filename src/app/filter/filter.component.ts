@@ -7,7 +7,7 @@ import { Filter } from '../dataModels/filter';
   styleUrls: ['./filter.component.css'],
 })
 export class FilterComponent implements OnInit {
-  @Input() filters: Filter[] | undefined = [];
+  @Input() filters: Filter[] = [];
 
   constructor() {}
 

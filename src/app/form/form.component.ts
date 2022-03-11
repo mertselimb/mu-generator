@@ -8,7 +8,9 @@ import { Dialog } from '../dataModels/dialog';
   styleUrls: ['./form.component.css'],
 })
 export class FormComponent implements OnInit {
-  dialogs: Dialog[] = [{ id: '', answers: [], reactions: [], priority: 0 }];
+  dialogs: Dialog[] = [
+    { id: '', answers: [], reactions: [], filter: [], priority: 0 },
+  ];
   dialogJson: string = '';
 
   constructor(private clipboardApi: ClipboardService) {}

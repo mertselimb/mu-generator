@@ -6,7 +6,7 @@ export interface Dialog {
   id: string;
   reactions: Reaction[];
   answers: Answer[];
-  filter?: Filter[];
+  filter: Filter[];
   restriction?: string;
   priority?: number;
 }

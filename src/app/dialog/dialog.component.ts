@@ -7,7 +7,9 @@ import { Dialog } from '../dataModels/dialog';
   styleUrls: ['./dialog.component.css'],
 })
 export class DialogComponent implements OnInit {
-  @Input() dialogs: Dialog[] = [{ id: '', answers: [], reactions: [] }];
+  @Input() dialogs: Dialog[] = [
+    { id: '', answers: [], reactions: [], filter: [] },
+  ];
 
   color = this.getRandomColor();
   constructor() {}
