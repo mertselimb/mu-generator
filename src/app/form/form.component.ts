@@ -22,6 +22,10 @@ export class FormComponent implements OnInit {
     this.copyStr(jsonArray);
   }
 
+  setJSON(): void {
+    this.dialogs = JSON.parse(this.dialogJson);
+  }
+
   copyStr(str: string) {
     this.clipboardApi.copyFromContent(str);
   }
