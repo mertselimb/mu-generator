@@ -8,7 +8,7 @@ import { Dialog } from '../dataModels/dialog';
 })
 export class DialogComponent implements OnInit {
   @Input() dialogs: Dialog[] = [
-    { id: '', answers: [], reactions: [], filter: [] },
+    { id: '', answers: [], reactions: [], filters: [] },
   ];
 
   color = this.getRandomColor();

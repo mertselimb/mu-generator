@@ -9,7 +9,7 @@ import { Dialog } from '../dataModels/dialog';
 })
 export class FormComponent implements OnInit {
   dialogs: Dialog[] = [
-    { id: '', answers: [], reactions: [], filter: [], priority: 0 },
+    { id: '', answers: [], reactions: [], filters: [], priority: 0 },
   ];
   dialogJson: string = '';
 
