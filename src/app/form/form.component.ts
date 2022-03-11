@@ -1,3 +1,4 @@
+import { ClipboardService } from 'ngx-clipboard';
 import { Component, OnInit } from '@angular/core';
 import { Dialog } from '../dataModels/dialog';
 
@@ -10,13 +11,18 @@ export class FormComponent implements OnInit {
   dialogs: Dialog[] = [{ id: '', answers: [], reactions: [], priority: 0 }];
   dialogJson: string = '';
 
-  constructor() {}
+  constructor(private clipboardApi: ClipboardService) {}
 
   ngOnInit(): void {}
 
   logDialog(): void {
     const jsonArray = JSON.stringify(this.dialogs);
     this.dialogJson = jsonArray.substring(1, jsonArray.length - 1);
-    console.log(jsonArray);
+    console.log(this.dialogs);
+    this.copyStr(jsonArray);
+  }
+
+  copyStr(str: string) {
+    this.clipboardApi.copyFromContent(str);
   }
 }

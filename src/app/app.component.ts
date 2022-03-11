@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'Mu Story Generator V1.3.3';
+  title = 'Mu Story Generator V1.3.4';
 }

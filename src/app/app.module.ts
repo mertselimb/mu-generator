@@ -9,6 +9,7 @@ import { ReactionsComponent } from './reactions/reactions.component';
 import { AnswersComponent } from './answers/answers.component';
 import { CommonModule } from '@angular/common';
 import { FilterComponent } from './filter/filter.component';
+import { ClipboardModule } from 'ngx-clipboard';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,13 @@ import { FilterComponent } from './filter/filter.component';
     AnswersComponent,
     FilterComponent,
   ],
-  imports: [BrowserModule, NgbModule, FormsModule,CommonModule],
+  imports: [
+    BrowserModule,
+    NgbModule,
+    FormsModule,
+    CommonModule,
+    ClipboardModule,
+  ],
   providers: [],
   bootstrap: [AppComponent],
 })
