@@ -1,9 +1,12 @@
-<div style="padding: 15px 15px 0px 15px; border-left: 2px solid #ccc">
-  <button class="btn btn-warning" (click)="createFilter()">
-    Create filter
-  </button>
+<div style="padding: 8px">
+  <div style="display: flex; justify-content: space-between">
+    <h3>Filters</h3>
+    <button class="btn btn-warning" (click)="createFilter()">
+      Create filter
+    </button>
+  </div>
   <div *ngFor="let filter of filters" style="margin-top: 5px">
-    <div class="form-group">
+    <div class="form-group" style="margin-top: 8px">
       <div class="input-group">
         <div class="input-group-prepend">
           <div class="input-group-text">Type</div>

@@ -1,10 +1,13 @@
-<div style="padding: 15px 15px 0px 15px; border-left: 2px solid #ccc">
-  <button class="btn btn-primary" (click)="createAnswer()">
-    Create answer
-  </button>
+<div style="padding: 8px">
+  <div style="display: flex; justify-content: space-between">
+    <h3>Answers</h3>
+    <button class="btn btn-primary" (click)="createAnswer()">
+      Create answer
+    </button>
+  </div>
 
   <div *ngFor="let answer of answers" style="margin-top: 5px">
-    <div class="form-group">
+    <div class="form-group" style="margin-top: 8px">
       <div class="input-group">
         <div class="input-group-prepend">
           <div class="input-group-text">Answer</div>
@@ -16,17 +19,14 @@
           [(ngModel)]="answer.text"
         />
         <div class="input-group-append">
-          <button class="btn btn-primary" (click)="createNextDialog(answer)">
+          <button class="btn btn-info" (click)="createNextDialog(answer)">
             Create next dialog
           </button>
         </div>
       </div>
     </div>
-    <div
-      class="form-group"
-      style="padding: 15px 15px 0px 15px; border-left: 2px solid #ccc"
-    >
-      <div class="input-group" style="margin: 0 0 15px 0">
+    <div class="form-group" style="padding: 15px">
+      <div class="input-group" style="margin: 0 0 3px 0">
         <div class="input-group-prepend">
           <div>Is this a ending?</div>
         </div>
@@ -37,76 +37,89 @@
           (change)="answer.end = !answer.end"
         />
       </div>
-      <div class="input-group">
+      <div class="input-group" style="margin: 0 0 15px 0" *ngIf="answer.end">
         <div class="input-group-prepend">
-          <div class="input-group-text">Economy</div>
+          <div class="input-group-text">Enter end message</div>
         </div>
         <input
-          type="number"
-          placeholder="Enter economy impact"
+          type="text"
+          placeholder="Enter end message"
           class="form-control"
-          [(ngModel)]="answer.outcome.economy"
+          [(ngModel)]="answer.endMessage"
         />
       </div>
-      <div class="input-group">
-        <div class="input-group-prepend">
-          <div class="input-group-text">Strength</div>
+      <div *ngIf="!answer.nextDialogs">
+        <div class="input-group">
+          <div class="input-group-prepend">
+            <div class="input-group-text">Economy</div>
+          </div>
+          <input
+            type="number"
+            placeholder="Enter economy impact"
+            class="form-control"
+            [(ngModel)]="answer.outcome.economy"
+          />
         </div>
-        <input
-          type="number"
-          placeholder="Enter strength impact"
-          class="form-control"
-          [(ngModel)]="answer.outcome.strength"
-        />
-      </div>
-      <div class="input-group">
-        <div class="input-group-prepend">
-          <div class="input-group-text">Happiness</div>
+        <div class="input-group">
+          <div class="input-group-prepend">
+            <div class="input-group-text">Strength</div>
+          </div>
+          <input
+            type="number"
+            placeholder="Enter strength impact"
+            class="form-control"
+            [(ngModel)]="answer.outcome.strength"
+          />
         </div>
-        <input
-          type="number"
-          placeholder="Enter happiness impact"
-          class="form-control"
-          [(ngModel)]="answer.outcome.happiness"
-        />
-      </div>
-      <div class="input-group">
-        <div class="input-group-prepend">
-          <div class="input-group-text">Bank</div>
+        <div class="input-group">
+          <div class="input-group-prepend">
+            <div class="input-group-text">Happiness</div>
+          </div>
+          <input
+            type="number"
+            placeholder="Enter happiness impact"
+            class="form-control"
+            [(ngModel)]="answer.outcome.happiness"
+          />
         </div>
-        <input
-          type="number"
-          placeholder="Enter bank impact"
-          class="form-control"
-          [(ngModel)]="answer.outcome.bank"
-        />
-      </div>
-      <div class="input-group">
-        <div class="input-group-prepend">
-          <div class="input-group-text">Religion</div>
+        <div class="input-group">
+          <div class="input-group-prepend">
+            <div class="input-group-text">Bank</div>
+          </div>
+          <input
+            type="number"
+            placeholder="Enter bank impact"
+            class="form-control"
+            [(ngModel)]="answer.outcome.bank"
+          />
         </div>
-        <input
-          type="number"
-          placeholder="Enter religion impact"
-          class="form-control"
-          [(ngModel)]="answer.outcome.religion"
-        />
-      </div>
-      <div class="input-group">
-        <div class="input-group-prepend">
-          <div class="input-group-text">Civilization</div>
+        <div class="input-group">
+          <div class="input-group-prepend">
+            <div class="input-group-text">Religion</div>
+          </div>
+          <input
+            type="number"
+            placeholder="Enter religion impact"
+            class="form-control"
+            [(ngModel)]="answer.outcome.religion"
+          />
         </div>
-        <input
-          type="number"
-          placeholder="Enter civilization impact"
-          class="form-control"
-          [(ngModel)]="answer.outcome.civilization"
-        />
+        <div class="input-group">
+          <div class="input-group-prepend">
+            <div class="input-group-text">Civilization</div>
+          </div>
+          <input
+            type="number"
+            placeholder="Enter civilization impact"
+            class="form-control"
+            [(ngModel)]="answer.outcome.civilization"
+          />
+        </div>
       </div>
+      <app-dialog
+        *ngIf="answer.nextDialogs"
+        [dialogs]="answer.nextDialogs"
+      ></app-dialog>
     </div>
-    <app-dialog
-      *ngIf="answer.nextDialogs"
-      [dialogs]="answer.nextDialogs"
-    ></app-dialog>
   </div>
 </div>

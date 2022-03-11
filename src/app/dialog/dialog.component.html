@@ -1,4 +1,12 @@
-<div style="padding: 15px 15px 0px 15px; border-left: 2px solid #ccc">
+<div
+  style="
+    padding: 8px;
+    margin-top: 8px;
+    border-left: 2px solid #ccc;
+    border-top: 2px solid #ccc;
+    border-bottom: 2px solid #ccc;
+  "
+>
   <div *ngFor="let dialog of dialogs">
     <div class="form-group">
       <div class="input-group mb-2">
@@ -35,11 +43,8 @@
         />
       </div>
     </div>
-    <h3>Reactions</h3>
     <app-reactions [reactions]="dialog.reactions"></app-reactions>
-    <h3>Answers</h3>
     <app-answers [answers]="dialog.answers"></app-answers>
-    <h3>Filters</h3>
     <app-filter [filters]="dialog.filter"></app-filter>
   </div>
 </div>

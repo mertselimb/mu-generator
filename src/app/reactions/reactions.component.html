@@ -1,7 +1,10 @@
-<div style="padding: 15px 15px 0px 15px; border-left: 2px solid #ccc">
-  <button class="btn btn-success" (click)="createReaction()">
-    Create reaction
-  </button>
+<div style="padding: 8px">
+  <div style="display: flex; justify-content: space-between">
+    <h3>Reactions</h3>
+    <button class="btn btn-success" (click)="createReaction()">
+      Create reaction
+    </button>
+  </div>
   <div *ngFor="let reaction of reactions" style="margin-top: 5px">
     <div class="form-group">
       <div class="input-group">
