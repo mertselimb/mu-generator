@@ -4,6 +4,6 @@ import { Stats } from './outcome';
 export interface Answer {
   text: string;
   outcome: Stats;
-  end: Boolean;
+  end?: Boolean;
   nextDialogs?: Dialog[];
 }

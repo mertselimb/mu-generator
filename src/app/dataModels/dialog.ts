@@ -8,4 +8,5 @@ export interface Dialog {
   answers: Answer[];
   filter?: Filter[];
   restriction?: string;
+  priority?: number;
 }

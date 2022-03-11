@@ -12,7 +12,7 @@ export class AnswersComponent implements OnInit {
   ngOnInit(): void {}
 
   createAnswer(): void {
-    this.answers.push({ text: '', outcome: {}, end: false });
+    this.answers.push({ text: '', outcome: {} });
   }
 
   createNextDialog(answer: Answer): void {

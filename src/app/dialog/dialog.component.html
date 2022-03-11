@@ -23,6 +23,17 @@
           [(ngModel)]="dialog.restriction"
         />
       </div>
+      <div class="input-group mb-2">
+        <div class="input-group-prepend">
+          <div class="input-group-text">Priority</div>
+        </div>
+        <input
+          type="number"
+          placeholder="Enter Priority"
+          class="form-control"
+          [(ngModel)]="dialog.priority"
+        />
+      </div>
     </div>
     <h3>Reactions</h3>
     <app-reactions [reactions]="dialog.reactions"></app-reactions>
