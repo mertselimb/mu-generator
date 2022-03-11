@@ -9,6 +9,7 @@ import { Dialog } from '../dataModels/dialog';
 export class DialogComponent implements OnInit {
   @Input() dialogs: Dialog[] = [{ id: '', answers: [], reactions: [] }];
 
+  color = this.getRandomColor();
   constructor() {}
 
   ngOnInit(): void {
@@ -23,5 +24,14 @@ export class DialogComponent implements OnInit {
       text += possible.charAt(Math.floor(Math.random() * possible.length));
     }
     return text;
+  }
+
+  getRandomColor() {
+    const letters = '0123456789ABCDEF';
+    let color = '#';
+    for (let i = 0; i < 6; i++) {
+      color += letters[Math.floor(Math.random() * 16)];
+    }
+    return color;
   }
 }
