@@ -19,8 +19,11 @@ export class ReactionsComponent implements OnInit {
     this.reactions.push({sender: 'Representative', text: '', type: 'left'});
   }
 
-  delete(text: string) {
-    const foundIndex = this.reactions.findIndex(reaction => reaction.text === text);
+  delete(toBeDeleted: Reaction) {
+    const foundIndex = this.reactions.findIndex(reaction =>
+      reaction.text === toBeDeleted.text &&
+      reaction.sender === toBeDeleted.sender &&
+      reaction.type === toBeDeleted.type);
     if (foundIndex > -1) {
       this.reactions.splice(foundIndex, 1); // 2nd parameter means remove one item only
     }
