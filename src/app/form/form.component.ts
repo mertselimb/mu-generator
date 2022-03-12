@@ -1,6 +1,6 @@
-import { ClipboardService } from 'ngx-clipboard';
-import { Component, OnInit } from '@angular/core';
-import { Dialog } from '../dataModels/dialog';
+import {ClipboardService} from 'ngx-clipboard';
+import {Component, OnInit} from '@angular/core';
+import {Dialog} from '../dataModels/dialog';
 
 @Component({
   selector: 'app-form',
@@ -8,19 +8,22 @@ import { Dialog } from '../dataModels/dialog';
   styleUrls: ['./form.component.css'],
 })
 export class FormComponent implements OnInit {
-  dialogs: Dialog[] = [
-    { id: '', answers: [], reactions: [], filters: [], priority: 0 },
-  ];
+  dialogs: Dialog[];
   dialogJson: string = '';
 
-  constructor(private clipboardApi: ClipboardService) {}
+  constructor(private clipboardApi: ClipboardService) {
+    this.dialogs = [
+      {id: '', answers: [], reactions: [], filters: [], priority: 0},
+    ]
+  }
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    console.log(this.dialogs)
+  }
 
   logDialog(): void {
     const jsonArray = JSON.stringify(this.dialogs);
     this.dialogJson = jsonArray.substring(1, jsonArray.length - 1);
-    console.log(this.dialogs);
     this.copyStr(jsonArray);
   }
 

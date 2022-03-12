@@ -29,7 +29,7 @@
       <div
         class="input-group"
         style="margin: 0 0 3px 0"
-        *ngIf="!answer.nextDialogs"
+        *ngIf="!answer.nextDialogs || answer.nextDialogs.length === 0"
       >
         <div class="input-group-prepend">
           <div>Is this a ending?</div>
@@ -52,7 +52,7 @@
           [(ngModel)]="answer.endMessage"
         />
       </div>
-      <div *ngIf="!answer.nextDialogs && !answer.end">
+      <div *ngIf="(!answer.nextDialogs || answer.nextDialogs.length === 0) && !answer.end">
         <div class="input-group">
           <div class="input-group-prepend">
             <div class="input-group-text">Economy</div>
@@ -120,10 +120,10 @@
           />
         </div>
       </div>
-      <app-dialog
+      <app-dialogs
         *ngIf="answer.nextDialogs"
         [dialogs]="answer.nextDialogs"
-      ></app-dialog>
+      ></app-dialogs>
     </div>
   </div>
 </div>

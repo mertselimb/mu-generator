@@ -1,0 +1,4 @@
+<div *ngFor="let dialog of dialogs">
+  <app-dialog [delete]="getDeleteFunc(dialog.id)" [dialog]="dialog">
+  </app-dialog>
+</div>
