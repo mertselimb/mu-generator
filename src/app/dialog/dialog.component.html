@@ -1,0 +1,52 @@
+<div style="
+    padding: 8px;
+    margin-top: 8px;
+    border-left: 4px solid {{ color }};
+  ">
+  <div class="form-group">
+    <div class="input-group mb-2">
+      <div class="input-group-prepend">
+        <div class="input-group-text">Id</div>
+      </div>
+      <input
+        [(ngModel)]="dialog.id"
+        class="form-control"
+        placeholder="Enter id"
+        type="text"
+      />
+      <div class="input-group-preppend">
+        <button (click)="collapse()" class="btn btn-warning">-</button>
+      </div>
+      <div class="input-group-append">
+        <button (click)="delete(dialog.id)" class="btn btn-danger">X</button>
+      </div>
+    </div>
+    <div *ngIf="!isCollapsed">
+      <div class="input-group mb-2">
+        <div class="input-group-prepend">
+          <div class="input-group-text">Restriction</div>
+        </div>
+        <input
+          [(ngModel)]="dialog.restriction"
+          class="form-control"
+          placeholder="Enter restriction"
+          type="text"
+        />
+      </div>
+      <div class="input-group mb-2">
+        <div class="input-group-prepend">
+          <div class="input-group-text">Priority</div>
+        </div>
+        <select [(ngModel)]="dialog.priority" class="form-select">
+          <option selected="selected" value="0">Normal</option>
+          <option value="99">Ending</option>
+        </select>
+      </div>
+    </div>
+  </div>
+  <div *ngIf="!isCollapsed">
+    <app-reactions [reactions]="dialog.reactions"></app-reactions>
+    <app-answers [answers]="dialog.answers"></app-answers>
+    <app-filter [filters]="dialog.filters"></app-filter>
+  </div>
+</div>
