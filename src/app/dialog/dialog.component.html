@@ -6,6 +6,7 @@
     border-top: 4px solid {{ color }};
     border-bottom: 4px solid {{ color }};
   "
+  *ngIf="dialogs.length > 0"
 >
   <div *ngFor="let dialog of dialogs">
     <div class="form-group">
@@ -24,8 +25,8 @@
             {{ collapseText }}
           </button>
         </div>
-        <div *ngIf="delete" class="input-group-append">
-          <button (click)="delete()" class="btn btn-danger">X</button>
+        <div class="input-group-append">
+          <button (click)="delete(dialog.id)" class="btn btn-danger">X</button>
         </div>
       </div>
       <div *ngIf="!isCollapsed">
