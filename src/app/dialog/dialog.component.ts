@@ -16,7 +16,7 @@ export class DialogComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    if (this.dialog.id) {
+    if (!this.dialog.id) {
       this.dialog.id = this.makeRandom();
     }
   }

@@ -22,7 +22,7 @@ export class FormComponent implements OnInit {
 
   logDialog(): void {
     const jsonArray = JSON.stringify(this.dialogs);
-    this.dialogJson = jsonArray.substring(1, jsonArray.length - 1);
+    this.dialogJson = jsonArray;
     this.copyStr(jsonArray);
   }
 
