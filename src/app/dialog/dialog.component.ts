@@ -1,5 +1,5 @@
-import { Component, Input, OnInit } from '@angular/core';
-import { Dialog } from '../dataModels/dialog';
+import {Component, Input, OnInit} from '@angular/core';
+import {Dialog} from '../dataModels/dialog';
 
 @Component({
   selector: 'app-dialog',
@@ -8,11 +8,16 @@ import { Dialog } from '../dataModels/dialog';
 })
 export class DialogComponent implements OnInit {
   @Input() dialogs: Dialog[] = [
-    { id: '', answers: [], reactions: [], filters: [] },
+    {id: '', answers: [], reactions: [], filters: []},
   ];
+  @Input() delete: any = null;
 
   color = this.getRandomColor();
-  constructor() {}
+  isCollapsed = false;
+  collapseText = 'Collapse';
+
+  constructor() {
+  }
 
   ngOnInit(): void {
     this.dialogs.forEach((dialog) => {
@@ -35,5 +40,14 @@ export class DialogComponent implements OnInit {
       color += letters[Math.floor(Math.random() * 16)];
     }
     return color;
+  }
+
+  collapse() {
+    this.isCollapsed = !this.isCollapsed;
+    if (this.isCollapsed) {
+      this.collapseText = 'Uncollapse';
+    } else {
+      this.collapseText = 'Collapse';
+    }
   }
 }
