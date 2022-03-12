@@ -5,6 +5,8 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
+    "gitBuild": "ng build --base-href \"https://mertselimb.github.io/mu-generator/\"",
+    "gitPublish": "npx angular-cli-ghpages --dir=dist/mu-generator",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
   },
