@@ -1,5 +1,5 @@
-import { Component, Input, OnInit } from '@angular/core';
-import { Answer } from '../dataModels/answer';
+import {Component, Input, OnInit} from '@angular/core';
+import {Answer} from '../dataModels/answer';
 
 @Component({
   selector: 'app-answers',
@@ -9,10 +9,11 @@ import { Answer } from '../dataModels/answer';
 export class AnswersComponent implements OnInit {
   @Input() answers: Answer[] = [];
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+  }
 
   createAnswer(): void {
-    this.answers.push({ text: '', outcome: {} });
+    this.answers.push({text: '', outcome: {}});
   }
 
   createNextDialog(answer: Answer): void {
@@ -27,6 +28,13 @@ export class AnswersComponent implements OnInit {
       answer.nextDialogs.push(newDialog);
     } else {
       answer.nextDialogs = [newDialog];
+    }
+  }
+
+  delete(text: string) {
+    const foundIndex = this.answers.findIndex(answer => answer.text === text);
+    if (foundIndex > -1) {
+      this.answers.splice(foundIndex, 1); // 2nd parameter means remove one item only
     }
   }
 }
