@@ -18,7 +18,6 @@ export class FormComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    console.log(this.dialogs)
   }
 
   logDialog(): void {

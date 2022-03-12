@@ -1,5 +1,5 @@
-import { Component, Input, OnInit } from '@angular/core';
-import { Reaction } from '../dataModels/reaction';
+import {Component, Input, OnInit} from '@angular/core';
+import {Reaction} from '../dataModels/reaction';
 
 @Component({
   selector: 'app-reactions',
@@ -8,11 +8,21 @@ import { Reaction } from '../dataModels/reaction';
 })
 export class ReactionsComponent implements OnInit {
   @Input() reactions: Reaction[] = [];
-  constructor() {}
 
-  ngOnInit(): void {}
+  constructor() {
+  }
+
+  ngOnInit(): void {
+  }
 
   createReaction(): void {
-    this.reactions.push({ sender: 'Representative', text: '', type: 'left' });
+    this.reactions.push({sender: 'Representative', text: '', type: 'left'});
+  }
+
+  delete(text: string) {
+    const foundIndex = this.reactions.findIndex(reaction => reaction.text === text);
+    if (foundIndex > -1) {
+      this.reactions.splice(foundIndex, 1); // 2nd parameter means remove one item only
+    }
   }
 }
