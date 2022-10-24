@@ -24,17 +24,6 @@
     <div *ngIf="!isCollapsed">
       <div class="input-group mb-2">
         <div class="input-group-prepend">
-          <div class="input-group-text">Restriction</div>
-        </div>
-        <input
-          [(ngModel)]="dialog.restriction"
-          class="form-control"
-          placeholder="Enter restriction"
-          type="text"
-        />
-      </div>
-      <div class="input-group mb-2">
-        <div class="input-group-prepend">
           <div class="input-group-text">Priority</div>
         </div>
         <select [(ngModel)]="dialog.priority" class="form-select">
