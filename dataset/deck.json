@@ -1,0 +1,4188 @@
+[
+  {
+    "id": "6bazzmlyjk396mlhz0dz",
+    "answers": [
+      {
+        "text": "Yes",
+        "outcome": {
+          "economy": -3,
+          "strength": 5
+        }
+      },
+      {
+        "text": "No",
+        "outcome": {
+          "strength": -3
+        }
+      }
+    ],
+    "reactions": [
+      {
+        "sender": "Representative",
+        "text": "We need a government television channel so people can be updated about our latest improvements to country",
+        "type": "left"
+      },
+      {
+        "sender": "Journalist",
+        "text": "You mean like propaganda? 🤔",
+        "type": "left"
+      },
+      {
+        "sender": "Representative",
+        "text": "No",
+        "type": "left"
+      },
+      {
+        "sender": "Representative",
+        "text": "maybe? 😏",
+        "type": "left"
+      },
+      {
+        "sender": "Economist",
+        "text": "This can be costly",
+        "type": "left"
+      },
+      {
+        "sender": "Representative",
+        "text": "Can we open it?",
+        "type": "left"
+      }
+    ]
+  },
+  {
+    "id": "06i8eo6uf1h51ao0r91u",
+    "answers": [
+      {
+        "text": "Increase the taxes 😏",
+        "outcome": {
+          "economy": 5,
+          "happiness": -5
+        }
+      },
+      {
+        "text": "We don't need a increase",
+        "outcome": {
+          "economy": -5,
+          "happiness": 5
+        }
+      },
+      {
+        "text": "We need to look into our spending",
+        "outcome": {
+          "economy": 3,
+          "happiness": 3
+        }
+      }
+    ],
+    "reactions": [
+      {
+        "sender": "Economist",
+        "text": "tax",
+        "type": "image"
+      },
+      {
+        "sender": "Economist",
+        "text": "We need more tax money",
+        "type": "left"
+      },
+      {
+        "sender": "Janitor",
+        "text": "You always need OUR money right? 🙄",
+        "type": "left"
+      },
+      {
+        "sender": "Chad",
+        "text": "Nobody asked you 🥱",
+        "type": "left"
+      },
+      {
+        "sender": "Janitor",
+        "text": "Nobody ever was",
+        "type": "left"
+      },
+      {
+        "sender": "Representative",
+        "text": "How should we handle this?",
+        "type": "left"
+      }
+    ]
+  },
+  {
+    "id": "un9et495angs8bmjlat6",
+    "answers": [
+      {
+        "text": "Send a famous woman singer to visit the troops",
+        "outcome": {
+          "economy": -5,
+          "strength": 5
+        }
+      },
+      {
+        "text": "Lets just give them a real health insurance and they will love it",
+        "outcome": {
+          "economy": -5,
+          "strength": 8,
+          "happiness": 8,
+          "civilization": -5
+        }
+      },
+      {
+        "text": "Their biggest motivation is fighting for their country, do nothing",
+        "outcome": {
+          "strength": -3
+        }
+      }
+    ],
+    "reactions": [
+      {
+        "sender": "General",
+        "text": "Kids these days doens't care about the army.",
+        "type": "left"
+      },
+      {
+        "sender": "General",
+        "text": "We need them to enlist more.",
+        "type": "left"
+      },
+      {
+        "sender": "General",
+        "text": "The army needs motivation. Why don't we get some women over? 😈",
+        "type": "left"
+      },
+      {
+        "sender": "Judge",
+        "text": "You know I am here don't you? 🙄",
+        "type": "left"
+      },
+      {
+        "sender": "General",
+        "text": "I meant a singer! Yes, a singer.",
+        "type": "left"
+      },
+      {
+        "sender": "Judge",
+        "text": "Sure",
+        "type": "left"
+      }
+    ]
+  },
+  {
+    "id": "kzj8lt3m2eu7psmlezb1",
+    "answers": [
+      {
+        "text": "Create a camp and take them in. ",
+        "outcome": {
+          "economy": -5,
+          "happiness": 3,
+          "religion": 5
+        }
+      },
+      {
+        "text": "Nobody gets in. If needed sink them. 😈",
+        "nextDialogs": [
+          {
+            "id": "60zykjf6a4im5h1neky7",
+            "answers": [
+              {
+                "text": "I am sorry? 🙃",
+                "outcome": {
+                  "religion": -5,
+                  "happiness": -5
+                }
+              },
+              {
+                "text": "Get rid of them 😡",
+                "nextDialogs": [
+                  {
+                    "id": "5hj594e6z73v00a5uyk4",
+                    "answers": [
+                      {
+                        "text": "I am sorry? 🙃",
+                        "outcome": {
+                          "religion": -8,
+                          "happiness": -8
+                        }
+                      }
+                    ],
+                    "reactions": [
+                      {
+                        "sender": "Representative",
+                        "text": "Before we could get rid of them journalists was there. They know everything.",
+                        "type": "left"
+                      },
+                      {
+                        "sender": "Journalist",
+                        "text": "Did you really think you could hide this?",
+                        "type": "left"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "reactions": [
+              {
+                "sender": "General",
+                "text": "While we were trying to persuade them. We needed to show them some force so we sink some of them.",
+                "type": "left"
+              },
+              {
+                "sender": "Priest",
+                "text": "DO you have something called heart?",
+                "type": "left"
+              },
+              {
+                "sender": "Representative",
+                "text": " There are dead people, kids on the beachs. What should we do?",
+                "type": "left"
+              },
+              {
+                "sender": "Journalist",
+                "text": "You just know everyone will be talking about this tomorrow. ",
+                "type": "left"
+              }
+            ]
+          },
+          {
+            "id": "",
+            "answers": [
+              {
+                "text": "Good job.",
+                "outcome": {
+                  "religion": -3,
+                  "strength": 5,
+                  "happiness": -3
+                }
+              }
+            ],
+            "reactions": [
+              {
+                "sender": "Representative",
+                "text": "...",
+                "type": "left"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "text": "Take them to where they come from.",
+        "outcome": {
+          "economy": -1,
+          "happiness": -3,
+          "religion": -3
+        }
+      },
+      {
+        "text": "We need to create a safe zone in their country so they can be safe. Then take them there.",
+        "nextDialogs": [
+          {
+            "id": "8tayalr2lassbsgjanos",
+            "answers": [
+              {
+                "text": "Just leave the refugees there without any safe zone. 🤫",
+                "outcome": {
+                  "religion": -3,
+                  "happiness": -3
+                }
+              },
+              {
+                "text": "General get ready for the operation. 🔫",
+                "nextDialogs": [
+                  {
+                    "id": "4acic479plo2vytscr7u",
+                    "answers": [
+                      {
+                        "text": "Good job.",
+                        "outcome": {
+                          "economy": -3,
+                          "strength": 5,
+                          "happiness": 5,
+                          "religion": 5
+                        }
+                      }
+                    ],
+                    "reactions": [
+                      {
+                        "sender": "General",
+                        "text": "I wasn't a battle without bloodshed but we were strong enough.",
+                        "type": "left"
+                      },
+                      {
+                        "sender": "General",
+                        "text": "We created a safe zone. ",
+                        "type": "left"
+                      },
+                      {
+                        "sender": "General",
+                        "text": "They will be safe there.",
+                        "type": "left"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "",
+                    "answers": [
+                      {
+                        "text": "Good job 🙄",
+                        "outcome": {
+                          "economy": -5,
+                          "strength": -5,
+                          "happiness": -5,
+                          "religion": -5
+                        }
+                      }
+                    ],
+                    "reactions": [
+                      {
+                        "sender": "General",
+                        "text": "Many died.",
+                        "type": "left"
+                      },
+                      {
+                        "sender": "General",
+                        "text": "We weren't strong enough.",
+                        "type": "left"
+                      },
+                      {
+                        "sender": "General",
+                        "text": "A lot of refugees died. ",
+                        "type": "left"
+                      },
+                      {
+                        "sender": "General",
+                        "text": "Then we leave the rest and run.",
+                        "type": "left"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "reactions": [
+              {
+                "sender": "Representative",
+                "text": "The country they come from rejected the idea.",
+                "type": "left"
+              },
+              {
+                "sender": "General",
+                "text": "We may force their hands with military strength.",
+                "type": "left"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "reactions": [
+      {
+        "sender": "Journalist",
+        "text": "refugeeBoat",
+        "type": "image"
+      },
+      {
+        "sender": "Journalist",
+        "text": "I heard there is a huge refugee wave on the border. This is one of the pics.",
+        "type": "left"
+      },
+      {
+        "sender": "General",
+        "text": "Yes, army is watching from a far.",
+        "type": "left"
+      },
+      {
+        "sender": "Priest",
+        "text": "We should take them in they are from our religion. They are our BROTHERS and SISTERS. 😇",
+        "type": "left"
+      }
+    ]
+  },
+  {
+    "id": "vvini2mo9tt4cjzyvtby",
+    "answers": [
+      {
+        "text": "We can't mess with justice",
+        "outcome": {
+          "happiness": 3
+        }
+      },
+      {
+        "text": "We can't mess with justice 😏",
+        "outcome": {
+          "strength": 3,
+          "happiness": -3
+        }
+      },
+      {
+        "text": "Book of Mu asks us to not mess with couples.",
+        "outcome": {
+          "religion": 3
+        }
+      }
+    ],
+    "reactions": [
+      {
+        "sender": "Representative",
+        "text": "A judge that we are close with asked us to let him \"judge\" his ex.",
+        "type": "left"
+      },
+      {
+        "sender": "Representative",
+        "text": "He said if needed he will help with out problems in the future.",
+        "type": "left"
+      },
+      {
+        "sender": "Judge",
+        "text": "I know that guy",
+        "type": "left"
+      },
+      {
+        "sender": "Judge",
+        "text": "I know we need some favors but this isnt worth it 🥱",
+        "type": "left"
+      }
+    ]
+  },
+  {
+    "id": "eiltvhztkimbbf9n4hbc",
+    "answers": [
+      {
+        "text": "I don't believe it 😏",
+        "outcome": {
+          "economy": 3,
+          "happiness": -3
+        }
+      },
+      {
+        "text": "We need to implement CO2 tax for companies 🤔",
+        "outcome": {
+          "economy": -3,
+          "happiness": 3
+        }
+      },
+      {
+        "text": "We need add nuclear energy to the clean energy list and support it.",
+        "outcome": {
+          "happiness": -3,
+          "strength": 3
+        }
+      }
+    ],
+    "reactions": [
+      {
+        "sender": "Dr",
+        "text": "globalWarming",
+        "type": "image"
+      },
+      {
+        "sender": "Dr",
+        "text": "Global warming is getting more serious every day.",
+        "type": "left"
+      },
+      {
+        "sender": "Economist",
+        "text": "You are reading too much into it 🥱",
+        "type": "left"
+      },
+      {
+        "sender": "Dr",
+        "text": "You need to read something other that your stock numbers 🤫",
+        "type": "left"
+      },
+      {
+        "sender": "Dr",
+        "text": "Global temperatures are rising.",
+        "type": "left"
+      },
+      {
+        "sender": "Representative",
+        "text": "What we should do?",
+        "type": "left"
+      }
+    ]
+  },
+  {
+    "id": "6ouyrecln7ivrhujp37c",
+    "answers": [
+      {
+        "text": "We need to improve our educational program.",
+        "outcome": {
+          "economy": -3,
+          "civilization": 3
+        }
+      },
+      {
+        "text": "Let's make children failing a fineable offence for parents.",
+        "outcome": {
+          "strength": 3,
+          "civilization": 3,
+          "happiness": -5
+        }
+      },
+      {
+        "text": "Stop thinkin over it too much.",
+        "outcome": {
+          "happiness": -3,
+          "civilization": -3
+        }
+      }
+    ],
+    "reactions": [
+      {
+        "sender": "Teacher",
+        "text": "exam",
+        "type": "image"
+      },
+      {
+        "sender": "Teacher",
+        "text": "Our children falling behind in exams. ",
+        "type": "left"
+      },
+      {
+        "sender": "Teacher",
+        "text": "We need to improve our countries education.",
+        "type": "left"
+      },
+      {
+        "sender": "Economist",
+        "text": "and ofcourse it will be costly",
+        "type": "left"
+      }
+    ]
+  },
+  {
+    "id": "cjt7zbcym2suy8nr8610",
+    "answers": [
+      {
+        "text": "Take what you need.",
+        "outcome": {
+          "economy": -3,
+          "civilization": 6
+        }
+      },
+      {
+        "text": "You can make do with your current funding.",
+        "outcome": {
+          "civilization": 3
+        }
+      },
+      {
+        "text": "People are hungry lets just scrap the project and feed people.",
+        "outcome": {
+          "civilization": -6,
+          "happiness": 4
+        }
+      }
+    ],
+    "reactions": [
+      {
+        "sender": "Engineer",
+        "text": "satellite",
+        "type": "image"
+      },
+      {
+        "sender": "Engineer",
+        "text": "We need more funding for our upcoming satellite.",
+        "type": "left"
+      },
+      {
+        "sender": "General",
+        "text": "I second that.",
+        "type": "left"
+      },
+      {
+        "sender": "Economist",
+        "text": "DO we really need that?",
+        "type": "left"
+      },
+      {
+        "sender": "Priest",
+        "text": "Maybe just maybe we could feed some people with that money 🙃",
+        "type": "left"
+      },
+      {
+        "sender": "Janitor",
+        "text": "Nobody would mind more food",
+        "type": "left"
+      }
+    ]
+  },
+  {
+    "id": "t3lus9auzmufkfp5hkzn",
+    "answers": [
+      {
+        "text": "Well shit happens. Start mining 😈",
+        "outcome": {
+          "economy": 3,
+          "happiness": -3
+        }
+      },
+      {
+        "text": "We can always find another one.",
+        "outcome": {
+          "economy": -3,
+          "happiness": 3
+        }
+      },
+      {
+        "text": "What if we sell those areas to me and then we find the gold? 🤑🤑🤑",
+        "nextDialogs": [
+          {
+            "id": "cm3y4mfm202j9d0b1frr",
+            "answers": [
+              {
+                "text": "Are you sure?🤑🤑🤑🤑🤑🤑",
+                "outcome": {
+                  "economy": -3,
+                  "happiness": -5,
+                  "bank": 8
+                }
+              }
+            ],
+            "reactions": [
+              {
+                "sender": "Representative",
+                "text": "We can't sell it 🤔",
+                "type": "left"
+              },
+              {
+                "sender": "Representative",
+                "text": "It is a wild life preservation area.",
+                "type": "left"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "reactions": [
+      {
+        "sender": "Representative",
+        "text": "mine",
+        "type": "image"
+      },
+      {
+        "sender": "Representative",
+        "text": "WE FOUND GOLD! 🤑🤑🤑🤑",
+        "type": "left"
+      },
+      {
+        "sender": "Representative",
+        "text": " WE ARE GOING TO BE RICH!",
+        "type": "left"
+      },
+      {
+        "sender": "Economist",
+        "text": "How rich!?",
+        "type": "left"
+      },
+      {
+        "sender": "Engineer",
+        "text": "We don't know we need to start mining to figure that out.",
+        "type": "left"
+      },
+      {
+        "sender": "Journalist",
+        "text": "This is at a wild life preservation area. ",
+        "type": "left"
+      },
+      {
+        "sender": "Journalist",
+        "text": "Do we really want to destroy it? 🤔",
+        "type": "left"
+      }
+    ]
+  },
+  {
+    "id": "ua4cb2i8tu38tr346l3n",
+    "answers": [
+      {
+        "text": "Let him talk ",
+        "outcome": {
+          "strength": -3,
+          "happiness": 3
+        }
+      },
+      {
+        "text": "Call his son for military service ",
+        "outcome": {
+          "strength": 3,
+          "happiness": -3
+        }
+      },
+      {
+        "text": "Find his connection to imaginary terrorist then seize his wealth 😈",
+        "outcome": {
+          "happiness": -3,
+          "bank": 6,
+          "economy": -3
+        }
+      }
+    ],
+    "reactions": [
+      {
+        "sender": "General",
+        "text": "One opposition leader talks TOO MUCH 😡",
+        "type": "left"
+      },
+      {
+        "sender": "General",
+        "text": "We may need to \"silence\" him",
+        "type": "left"
+      },
+      {
+        "sender": "SJW",
+        "text": "This is literally 1984",
+        "type": "left"
+      },
+      {
+        "sender": "Judge",
+        "text": "So we are killing people now?",
+        "type": "left"
+      }
+    ]
+  },
+  {
+    "id": "7d4jyf0al9mmbl3icjaj",
+    "answers": [
+      {
+        "text": "let's go! 🤑",
+        "outcome": {
+          "bank": 3,
+          "happiness": -3
+        }
+      },
+      {
+        "text": "oh stfu",
+        "outcome": {}
+      }
+    ],
+    "reactions": [
+      {
+        "sender": "Chad",
+        "text": "cutForest",
+        "type": "image"
+      },
+      {
+        "sender": "Chad",
+        "text": "I found the best location for my next hotel",
+        "type": "left"
+      },
+      {
+        "sender": "Chad",
+        "text": "buuuut we may need to cut some tiny forest🙃🙃🙃",
+        "type": "left"
+      },
+      {
+        "sender": "Dr",
+        "text": "fuck ecology right!?🙄",
+        "type": "left"
+      }
+    ]
+  },
+  {
+    "id": "645ikndv375m0g0n1kjj",
+    "answers": [
+      {
+        "text": "Ok go build it yourself 👋",
+        "outcome": {
+          "religion": 3,
+          "strength": -3
+        }
+      },
+      {
+        "text": "Ok we can give you more budget",
+        "outcome": {
+          "religion": 3,
+          "economy": -3
+        }
+      },
+      {
+        "text": "We have enough 🥱",
+        "outcome": {
+          "religion": -3
+        }
+      }
+    ],
+    "reactions": [
+      {
+        "sender": "Priest",
+        "text": "We need more temples to show the glory of the God of MU 😇",
+        "type": "left"
+      },
+      {
+        "sender": "Priest",
+        "text": "we need your help",
+        "type": "left"
+      },
+      {
+        "sender": "Representative",
+        "text": "I don't know about this",
+        "type": "left"
+      },
+      {
+        "sender": "Representative",
+        "text": "they already have a good budget",
+        "type": "left"
+      },
+      {
+        "sender": "Economist",
+        "text": "second that",
+        "type": "left"
+      }
+    ]
+  },
+  {
+    "id": "pje8heof13bjt01983oz",
+    "answers": [
+      {
+        "text": "We need to look into our spending",
+        "outcome": {
+          "economy": 5,
+          "bank": -5
+        }
+      },
+      {
+        "text": "We are already doing enough to fix the economy 🥱",
+        "outcome": {
+          "economy": -5
+        }
+      },
+      {
+        "text": "So they are getting warm. How good is that 😃",
+        "outcome": {
+          "economy": -8,
+          "happiness": -8
+        }
+      }
+    ],
+    "reactions": [
+      {
+        "sender": "Economist",
+        "text": "burningMoney",
+        "type": "image"
+      },
+      {
+        "sender": "Economist",
+        "text": "Our economy is collapsing 🙄",
+        "type": "left"
+      },
+      {
+        "sender": "Economist",
+        "text": "People are burning their moneys to get warm",
+        "type": "left"
+      }
+    ],
+    "filters": [
+      {
+        "amount": 30,
+        "stat": "economy",
+        "type": "less"
+      }
+    ]
+  },
+  {
+    "id": "vnefva9lpksjs5j1u67d",
+    "priority": 99,
+    "answers": [
+      {
+        "text": "We need to run 🙄",
+        "outcome": {},
+        "end": true,
+        "endMessage": "Sir, people hanged the last president. They starved the people. We should be carefull."
+      },
+      {
+        "text": "Give me one of those drinks",
+        "outcome": {},
+        "end": true,
+        "endMessage": "Sir, people hanged the last president. They starved the people. We should be carefull."
+      },
+      {
+        "text": "Well, we deserved it",
+        "outcome": {},
+        "end": true,
+        "endMessage": "Sir, people hanged the last president. They starved the people. We should be carefull."
+      }
+    ],
+    "reactions": [
+      {
+        "sender": "Representative",
+        "text": "hangMan",
+        "type": "image"
+      },
+      {
+        "sender": "Representative",
+        "text": "Our economy is in ruins 🙃",
+        "type": "left"
+      },
+      {
+        "sender": "Representative",
+        "text": "People are hungry and they are coming for us",
+        "type": "left"
+      }
+    ],
+    "filters": [
+      {
+        "amount": 0,
+        "stat": "economy",
+        "type": "less"
+      }
+    ]
+  },
+  {
+    "id": "pkapyb5m06zhubicfrup",
+    "answers": [
+      {
+        "text": "I sometimes see ghosts too. Go get some sleep 🥱",
+        "outcome": {},
+        "nextDialogs": [
+          {
+            "id": "pvrf5sfoez6k2226rz0a",
+            "answers": [
+              {
+                "text": "Spend as much as we need. Help them",
+                "outcome": {
+                  "economy": -3,
+                  "happiness": -3
+                }
+              },
+              {
+                "text": "Ask for donations from people and use them to help people",
+                "outcome": {},
+                "nextDialogs": [
+                  {
+                    "id": "pu1okmde2iok1sg9dlk3",
+                    "answers": [
+                      {
+                        "text": "I don't care 🥱",
+                        "outcome": {
+                          "economy": -8,
+                          "happiness": -8,
+                          "religion": 1
+                        }
+                      },
+                      {
+                        "text": "Then spend as much as we need. Help them",
+                        "outcome": {
+                          "economy": -3,
+                          "happiness": -3
+                        }
+                      }
+                    ],
+                    "reactions": [
+                      {
+                        "sender": "Janitor",
+                        "text": "So you are going to wait until they die and then use little money you get from people 😡",
+                        "type": "left"
+                      },
+                      {
+                        "sender": "Janitor",
+                        "text": "What was your job?",
+                        "type": "left"
+                      },
+                      {
+                        "sender": "Representative",
+                        "text": "If we do this even if we get a large sum people will be dead by then",
+                        "type": "left"
+                      },
+                      {
+                        "sender": "Representative",
+                        "text": "Ken is right",
+                        "type": "left"
+                      }
+                    ],
+                    "priority": 0
+                  }
+                ]
+              },
+              {
+                "text": "Don't do anything 🥱",
+                "outcome": {},
+                "nextDialogs": [
+                  {
+                    "id": "pzprou4lcogjtac9ajyn",
+                    "answers": [
+                      {
+                        "text": "I don't care 🥱🥱🥱",
+                        "outcome": {
+                          "economy": -10,
+                          "happiness": -10
+                        }
+                      },
+                      {
+                        "text": "Then spend as much as we need. Help them",
+                        "outcome": {
+                          "economy": -3,
+                          "happiness": -3
+                        }
+                      }
+                    ],
+                    "reactions": [
+                      {
+                        "sender": "SJW",
+                        "text": "They will die under rubble! You are just the worst 🤮",
+                        "type": "left"
+                      },
+                      {
+                        "sender": "Janitor",
+                        "text": "How can you let people die 😡",
+                        "type": "left"
+                      },
+                      {
+                        "sender": "Economist",
+                        "text": "Even I wouldn't go that far 🙃",
+                        "type": "left"
+                      },
+                      {
+                        "sender": "Representative",
+                        "text": "Are you sure?",
+                        "type": "left"
+                      }
+                    ],
+                    "priority": 0
+                  }
+                ]
+              }
+            ],
+            "reactions": [
+              {
+                "sender": "Representative",
+                "text": "I am getting urgent news",
+                "type": "left"
+              },
+              {
+                "sender": "Representative",
+                "text": "There was a huge earthquake in one of our cities",
+                "type": "left"
+              },
+              {
+                "sender": "Representative",
+                "text": "There is a lot of casulties they need help",
+                "type": "left"
+              },
+              {
+                "sender": "Representative",
+                "text": "What should we do?",
+                "type": "left"
+              }
+            ],
+            "priority": 0
+          }
+        ]
+      },
+      {
+        "text": "Listen to it",
+        "outcome": {},
+        "nextDialogs": [
+          {
+            "id": "5mazr4bd1iky9o0epzyj",
+            "answers": [
+              {
+                "text": "They want war! 🔫 Send a jet to the signal!",
+                "outcome": {},
+                "nextDialogs": [
+                  {
+                    "id": "2jd8f2iepi8hslmp0ura",
+                    "answers": [
+                      {
+                        "text": "THEY ARE SCARED OF US 😈😈",
+                        "outcome": {},
+                        "nextDialogs": [
+                          {
+                            "id": "dc3joi2nplst8d97ghir",
+                            "answers": [
+                              {
+                                "text": "Spend as much as we need. Help them",
+                                "outcome": {
+                                  "economy": -3,
+                                  "happiness": -3
+                                }
+                              },
+                              {
+                                "text": "Ask for donations from people and use them to help people",
+                                "outcome": {},
+                                "nextDialogs": [
+                                  {
+                                    "id": "alpphe91r2aav36bj1d2",
+                                    "answers": [
+                                      {
+                                        "text": "I don't care 🥱",
+                                        "outcome": {
+                                          "economy": -8,
+                                          "happiness": -8
+                                        }
+                                      },
+                                      {
+                                        "text": "Then spend as much as we need. Help them",
+                                        "outcome": {
+                                          "economy": -3,
+                                          "happiness": -3
+                                        }
+                                      }
+                                    ],
+                                    "reactions": [
+                                      {
+                                        "sender": "Janitor",
+                                        "text": "So you are going to wait until they die and then use little money you get from people 😡",
+                                        "type": "left"
+                                      },
+                                      {
+                                        "sender": "Janitor",
+                                        "text": "What was your job?",
+                                        "type": "left"
+                                      },
+                                      {
+                                        "sender": "Representative",
+                                        "text": "If we do this even if we get a large sum people will be dead by then",
+                                        "type": "left"
+                                      },
+                                      {
+                                        "sender": "Representative",
+                                        "text": "Ken is right",
+                                        "type": "left"
+                                      }
+                                    ],
+                                    "priority": 0
+                                  }
+                                ]
+                              },
+                              {
+                                "text": "Don't do anything 🥱",
+                                "outcome": {},
+                                "nextDialogs": [
+                                  {
+                                    "id": "pfne07ey8ozel8kas0j4",
+                                    "answers": [
+                                      {
+                                        "text": "I don't care 🥱🥱🥱",
+                                        "outcome": {
+                                          "economy": -10,
+                                          "happiness": -10
+                                        }
+                                      },
+                                      {
+                                        "text": "Then spend as much as we need. Help them",
+                                        "outcome": {
+                                          "economy": -3,
+                                          "happiness": -3
+                                        }
+                                      }
+                                    ],
+                                    "reactions": [
+                                      {
+                                        "sender": "SJW",
+                                        "text": "They will die under rubble! You are just the worst 🤮",
+                                        "type": "left"
+                                      },
+                                      {
+                                        "sender": "Janitor",
+                                        "text": "How can you let people die 😡",
+                                        "type": "left"
+                                      },
+                                      {
+                                        "sender": "Economist",
+                                        "text": "Even I wouldn't go that far 🙃",
+                                        "type": "left"
+                                      },
+                                      {
+                                        "sender": "Representative",
+                                        "text": "Are you sure?",
+                                        "type": "left"
+                                      }
+                                    ],
+                                    "priority": 0
+                                  }
+                                ]
+                              }
+                            ],
+                            "reactions": [
+                              {
+                                "sender": "Representative",
+                                "text": "I am getting urgent news",
+                                "type": "left"
+                              },
+                              {
+                                "sender": "Representative",
+                                "text": "There was a huge earthquake in one of our cities",
+                                "type": "left"
+                              },
+                              {
+                                "sender": "Representative",
+                                "text": "There is a lot of casulties they need help",
+                                "type": "left"
+                              },
+                              {
+                                "sender": "Representative",
+                                "text": "What should we do?",
+                                "type": "left"
+                              }
+                            ],
+                            "priority": 0
+                          }
+                        ]
+                      }
+                    ],
+                    "reactions": [
+                      {
+                        "sender": "General",
+                        "text": "Scramble the jets!",
+                        "type": "left"
+                      },
+                      {
+                        "sender": "Pilot",
+                        "text": "Heading to the destination",
+                        "type": "left"
+                      },
+                      {
+                        "sender": "Journalist",
+                        "text": "HOLY SHIT",
+                        "type": "left"
+                      },
+                      {
+                        "sender": "Journalist",
+                        "text": "HOW DID YOU UNDERSTAND THAT",
+                        "type": "left"
+                      },
+                      {
+                        "sender": "Journalist",
+                        "text": "IT IS JUST A RED FUCKING SEA",
+                        "type": "left"
+                      },
+                      {
+                        "sender": "Pilot",
+                        "text": "I am here",
+                        "type": "left"
+                      },
+                      {
+                        "sender": "Pilot",
+                        "text": "There is nothing",
+                        "type": "left"
+                      }
+                    ],
+                    "priority": 0
+                  }
+                ]
+              },
+              {
+                "text": "They are trying to tell us about something. Is it about Red Sea City?",
+                "outcome": {},
+                "nextDialogs": [
+                  {
+                    "id": "douchztrr6ay4lglv08v",
+                    "answers": [
+                      {
+                        "text": "Get the city ready for a big earthquake. Call it a drill.",
+                        "outcome": {},
+                        "nextDialogs": [
+                          {
+                            "id": "8o38bz8hu6jyfbyaim4f",
+                            "answers": [
+                              {
+                                "text": "At least that is something",
+                                "outcome": {
+                                  "economy": -3
+                                }
+                              }
+                            ],
+                            "reactions": [
+                              {
+                                "sender": "Representative",
+                                "text": "There was a huge earthquake",
+                                "type": "left"
+                              },
+                              {
+                                "sender": "Representative",
+                                "text": "But people were at the drill 😃",
+                                "type": "left"
+                              },
+                              {
+                                "sender": "Representative",
+                                "text": "We don't have many casulties",
+                                "type": "left"
+                              }
+                            ],
+                            "priority": 0
+                          }
+                        ]
+                      }
+                    ],
+                    "reactions": [
+                      {
+                        "sender": "Representative",
+                        "text": "There was many small earthquakes there",
+                        "type": "left"
+                      },
+                      {
+                        "sender": "Representative",
+                        "text": "Do you think it is related?",
+                        "type": "left"
+                      },
+                      {
+                        "sender": "Engineer",
+                        "text": "Maybe I really don't know",
+                        "type": "left"
+                      },
+                      {
+                        "sender": "Engineer",
+                        "text": "At this point we are just guessing",
+                        "type": "left"
+                      }
+                    ],
+                    "priority": 0
+                  }
+                ]
+              },
+              {
+                "text": "ALIENS WANTS MY NUDES. SEND IT!!!! 👅👅👅",
+                "outcome": {},
+                "nextDialogs": [
+                  {
+                    "id": "h5po4nebb4zjibbazecr",
+                    "answers": [
+                      {
+                        "text": "DO IT 😏",
+                        "outcome": {},
+                        "nextDialogs": [
+                          {
+                            "id": "ydd95dshyi42abjka9sv",
+                            "answers": [
+                              {
+                                "text": "😈😈😈",
+                                "outcome": {}
+                              }
+                            ],
+                            "reactions": [
+                              {
+                                "sender": "Representative",
+                                "text": "Alright",
+                                "type": "left"
+                              },
+                              {
+                                "sender": "Representative",
+                                "text": "You are the president",
+                                "type": "left"
+                              },
+                              {
+                                "sender": "Engineer",
+                                "text": "Not proud of it but",
+                                "type": "left"
+                              },
+                              {
+                                "sender": "Engineer",
+                                "text": "I sent it",
+                                "type": "left"
+                              },
+                              {
+                                "sender": "Alien",
+                                "text": "**Happy alien noices** UwU",
+                                "type": "left"
+                              },
+                              {
+                                "sender": "Chad",
+                                "text": "TIME FOR ALIEN FEET PICS 🦶🏻",
+                                "type": "left"
+                              }
+                            ],
+                            "priority": 0
+                          }
+                        ]
+                      }
+                    ],
+                    "reactions": [
+                      {
+                        "sender": "SJW",
+                        "text": "HOW DID WE GET THERE",
+                        "type": "left"
+                      },
+                      {
+                        "sender": "Judge",
+                        "text": "So we are sexually harassing aliens now 🙃",
+                        "type": "left"
+                      },
+                      {
+                        "sender": "Judge",
+                        "text": "That is a new level",
+                        "type": "left"
+                      },
+                      {
+                        "sender": "Chad",
+                        "text": "GO FOR IT!!! 🔥🔥🔥",
+                        "type": "left"
+                      },
+                      {
+                        "sender": "Representative",
+                        "text": "Wait ",
+                        "type": "left"
+                      },
+                      {
+                        "sender": "Representative",
+                        "text": "For real?",
+                        "type": "left"
+                      },
+                      {
+                        "sender": "General",
+                        "text": "I think we should have bombed them 🥱",
+                        "type": "left"
+                      },
+                      {
+                        "sender": "Journalist",
+                        "text": "You just want to bomb somewhere don't you?",
+                        "type": "left"
+                      }
+                    ],
+                    "priority": 0
+                  }
+                ]
+              }
+            ],
+            "reactions": [
+              {
+                "sender": "Engineer",
+                "text": "redSea",
+                "type": "image"
+              },
+              {
+                "sender": "Engineer",
+                "text": "They sent this message",
+                "type": "left"
+              }
+            ],
+            "priority": 0,
+            "filters": [
+              {
+                "amount": 60,
+                "stat": "civilization",
+                "type": "more"
+              }
+            ]
+          },
+          {
+            "id": "olkad3k1t3la1bv48amk",
+            "answers": [
+              {
+                "text": "and?",
+                "outcome": {},
+                "nextDialogs": [
+                  {
+                    "id": "9tufstccui1l01pmdn4k",
+                    "answers": [
+                      {
+                        "text": "Spend as much as we need. Help them",
+                        "outcome": {
+                          "economy": -3,
+                          "happiness": -3
+                        }
+                      },
+                      {
+                        "text": "Ask for donations from people and use them to help people",
+                        "outcome": {},
+                        "nextDialogs": [
+                          {
+                            "id": "dii9d4d8sd7j3j64yb0z",
+                            "answers": [
+                              {
+                                "text": "I don't care 🥱",
+                                "outcome": {
+                                  "economy": -8,
+                                  "happiness": -8
+                                }
+                              },
+                              {
+                                "text": "Then spend as much as we need. Help them",
+                                "outcome": {
+                                  "economy": -3,
+                                  "happiness": -3
+                                }
+                              }
+                            ],
+                            "reactions": [
+                              {
+                                "sender": "Janitor",
+                                "text": "So you are going to wait until they die and then use little money you get from people 😡",
+                                "type": "left"
+                              },
+                              {
+                                "sender": "Janitor",
+                                "text": "What was your job?",
+                                "type": "left"
+                              },
+                              {
+                                "sender": "Representative",
+                                "text": "If we do this even if we get a large sum people will be dead by then",
+                                "type": "left"
+                              },
+                              {
+                                "sender": "Representative",
+                                "text": "Ken is right",
+                                "type": "left"
+                              }
+                            ],
+                            "priority": 0
+                          }
+                        ]
+                      },
+                      {
+                        "text": "Don't do anything 🥱",
+                        "outcome": {},
+                        "nextDialogs": [
+                          {
+                            "id": "rdk0svl535r911tn6mns",
+                            "answers": [
+                              {
+                                "text": "I don't care 🥱🥱🥱",
+                                "outcome": {
+                                  "economy": -10,
+                                  "happiness": -10
+                                }
+                              },
+                              {
+                                "text": "Then spend as much as we need. Help them",
+                                "outcome": {
+                                  "economy": -3,
+                                  "happiness": -3
+                                }
+                              }
+                            ],
+                            "reactions": [
+                              {
+                                "sender": "SJW",
+                                "text": "They will die under rubble! You are just the worst 🤮",
+                                "type": "left"
+                              },
+                              {
+                                "sender": "Janitor",
+                                "text": "How can you let people die 😡",
+                                "type": "left"
+                              },
+                              {
+                                "sender": "Economist",
+                                "text": "Even I wouldn't go that far 🙃",
+                                "type": "left"
+                              },
+                              {
+                                "sender": "Representative",
+                                "text": "Are you sure?",
+                                "type": "left"
+                              }
+                            ],
+                            "priority": 0
+                          }
+                        ]
+                      }
+                    ],
+                    "reactions": [
+                      {
+                        "sender": "Representative",
+                        "text": "I am getting urgent news",
+                        "type": "left"
+                      },
+                      {
+                        "sender": "Representative",
+                        "text": "There was a huge earthquake in one of our cities",
+                        "type": "left"
+                      },
+                      {
+                        "sender": "Representative",
+                        "text": "There is a lot of casulties they need help",
+                        "type": "left"
+                      },
+                      {
+                        "sender": "Representative",
+                        "text": "What should we do?",
+                        "type": "left"
+                      }
+                    ],
+                    "priority": 0
+                  }
+                ]
+              }
+            ],
+            "reactions": [
+              {
+                "sender": "Engineer",
+                "text": "They are definitely sending something",
+                "type": "left"
+              },
+              {
+                "sender": "Engineer",
+                "text": "But we couldn't understand it",
+                "type": "left"
+              }
+            ],
+            "priority": 0,
+            "filters": [
+              {
+                "amount": 60,
+                "stat": "civilization",
+                "type": "less"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "reactions": [
+      {
+        "sender": "Engineer",
+        "text": "satelliteArray",
+        "type": "image"
+      },
+      {
+        "sender": "Engineer",
+        "text": "WE ARE GETTING SIGNALS FROM OUTER SPACE",
+        "type": "left"
+      },
+      {
+        "sender": "Chad",
+        "text": "HOLY SHIT ALIENS 👽👽👽👽👽",
+        "type": "left"
+      },
+      {
+        "sender": "Engineer",
+        "text": "We should try to understand it",
+        "type": "left"
+      },
+      {
+        "sender": "Priest",
+        "text": "Our people shouldn't believe things like aliens. Are you a kid?",
+        "type": "left"
+      },
+      {
+        "sender": "Representative",
+        "text": "What should we do?",
+        "type": "left"
+      }
+    ],
+    "priority": 0
+  },
+  {
+    "id": "0l8lsd6h33yp87ku12m8",
+    "answers": [
+      {
+        "text": "HAHAHAHHA WOMEN *sips coffe*",
+        "outcome": {
+          "civilization": -5,
+          "happiness": -5
+        }
+      },
+      {
+        "text": "We should create more policies focusing this",
+        "outcome": {
+          "happiness": 3
+        }
+      }
+    ],
+    "reactions": [
+      {
+        "sender": "Journalist",
+        "text": "womenRights",
+        "type": "image"
+      },
+      {
+        "sender": "Journalist",
+        "text": "Women are protesting",
+        "type": "left"
+      },
+      {
+        "sender": "Journalist",
+        "text": "They think 80% male ratio of parlement is not acceptable",
+        "type": "left"
+      }
+    ],
+    "priority": 0
+  },
+  {
+    "id": "skdau3m0d84zni03liun",
+    "answers": [
+      {
+        "text": "We should ask World Union to send some peacekeepers",
+        "outcome": {},
+        "nextDialogs": [
+          {
+            "id": "u8dr463jfmtpcp28kcdt",
+            "answers": [
+              {
+                "text": "Great",
+                "outcome": {
+                  "happiness": 5
+                }
+              }
+            ],
+            "reactions": [
+              {
+                "sender": "Representative",
+                "text": "They sent some troops",
+                "type": "left"
+              },
+              {
+                "sender": "Representative",
+                "text": "Their numbers are not much but it is just worth the risk for the enemy",
+                "type": "left"
+              },
+              {
+                "sender": "General",
+                "text": "Enemy is retreating",
+                "type": "left"
+              }
+            ],
+            "priority": 0
+          }
+        ]
+      },
+      {
+        "text": "If they want war they got war 😈",
+        "outcome": {},
+        "nextDialogs": [
+          {
+            "id": "lns503mn4ysukln52jrc",
+            "answers": [
+              {
+                "text": "So Hugh what is happening?",
+                "outcome": {},
+                "nextDialogs": [
+                  {
+                    "id": "v6sn9i6ptaj1f1dtau8g",
+                    "answers": [
+                      {
+                        "text": "Shit 🙄",
+                        "outcome": {
+                          "strength": -10,
+                          "happiness": -10,
+                          "economy": -10
+                        }
+                      }
+                    ],
+                    "reactions": [
+                      {
+                        "sender": "General",
+                        "text": "We lost a lot of people",
+                        "type": "left"
+                      },
+                      {
+                        "sender": "General",
+                        "text": "The situation is quite bad",
+                        "type": "left"
+                      },
+                      {
+                        "sender": "General",
+                        "text": "We lost some villages on the border",
+                        "type": "left"
+                      }
+                    ],
+                    "filters": [
+                      {
+                        "amount": 60,
+                        "stat": "strength",
+                        "type": "less"
+                      }
+                    ],
+                    "priority": 0
+                  },
+                  {
+                    "id": "5k6vkt8vvjh0s03hfnm3",
+                    "answers": [
+                      {
+                        "text": "Yeah it could be worse",
+                        "outcome": {
+                          "economy": -5,
+                          "strength": -5,
+                          "happiness": -5
+                        }
+                      }
+                    ],
+                    "reactions": [
+                      {
+                        "sender": "General",
+                        "text": "We lost a lot of people but they did too",
+                        "type": "left"
+                      },
+                      {
+                        "sender": "General",
+                        "text": "Nobody earned anything",
+                        "type": "left"
+                      },
+                      {
+                        "sender": "General",
+                        "text": "A meaningless war",
+                        "type": "left"
+                      },
+                      {
+                        "sender": "Janitor",
+                        "text": "So the poor died for nothing again",
+                        "type": "left"
+                      },
+                      {
+                        "sender": "Economist",
+                        "text": "This is going to be costly",
+                        "type": "left"
+                      },
+                      {
+                        "sender": "Representative",
+                        "text": "At the very least we are still in power",
+                        "type": "left"
+                      },
+                      {
+                        "sender": "Janitor",
+                        "text": "Because it is the only thing counts right?",
+                        "type": "left"
+                      }
+                    ],
+                    "filters": [
+                      {
+                        "amount": 60,
+                        "stat": "strength",
+                        "type": "more"
+                      },
+                      {
+                        "amount": 70,
+                        "stat": "strength",
+                        "type": "less"
+                      }
+                    ],
+                    "priority": 0
+                  },
+                  {
+                    "id": "j83mra290s9e57cbr9uu",
+                    "answers": [
+                      {
+                        "text": "WOOOOOOOO 🤑",
+                        "outcome": {
+                          "economy": 10,
+                          "strength": 10,
+                          "happiness": 10
+                        }
+                      }
+                    ],
+                    "reactions": [
+                      {
+                        "sender": "General",
+                        "text": "We lost some people",
+                        "type": "left"
+                      },
+                      {
+                        "sender": "General",
+                        "text": "BUT THEY LOST A LOT 😈",
+                        "type": "left"
+                      },
+                      {
+                        "sender": "General",
+                        "text": "WE CONQUERED SOME VILLAGES ON THE BORDER ",
+                        "type": "left"
+                      },
+                      {
+                        "sender": "Chad",
+                        "text": "SUCK ON THIS BITCHESS 🍆🍆🍆🍆🍆🍆",
+                        "type": "left"
+                      },
+                      {
+                        "sender": "SJW",
+                        "text": "You know people died",
+                        "type": "left"
+                      },
+                      {
+                        "sender": "Chad",
+                        "text": "ON MY 🍆",
+                        "type": "left"
+                      },
+                      {
+                        "sender": "Judge",
+                        "text": "Guys enough",
+                        "type": "left"
+                      },
+                      {
+                        "sender": "Economist",
+                        "text": "We conquered a oil reserves so this is great",
+                        "type": "left"
+                      },
+                      {
+                        "sender": "Representative",
+                        "text": "Holy shit 🤑",
+                        "type": "left"
+                      }
+                    ],
+                    "filters": [
+                      {
+                        "amount": 70,
+                        "stat": "strength",
+                        "type": "more"
+                      }
+                    ],
+                    "priority": 0
+                  }
+                ]
+              }
+            ],
+            "reactions": [
+              {
+                "sender": "Chad",
+                "text": "WOOOOOOO",
+                "type": "left"
+              },
+              {
+                "sender": "Chad",
+                "text": "CAN I DRIVE A JET🤔🤔🤔🤔🤔",
+                "type": "left"
+              },
+              {
+                "sender": "General",
+                "text": "What do you think?",
+                "type": "left"
+              },
+              {
+                "sender": "Janitor",
+                "text": "Only exited guy is the one with the rich dad classic",
+                "type": "left"
+              },
+              {
+                "sender": "General",
+                "text": "Guys this is serious",
+                "type": "left"
+              },
+              {
+                "sender": "General",
+                "text": "Enemy is asking their allies to join the war",
+                "type": "left"
+              },
+              {
+                "sender": "General",
+                "text": "Clashes are continuing and quite serious",
+                "type": "left"
+              }
+            ],
+            "priority": 0
+          }
+        ]
+      },
+      {
+        "text": "Say we will help but we won't",
+        "outcome": {},
+        "nextDialogs": [
+          {
+            "id": "gtay4mcryp2y050c8h3f",
+            "answers": [
+              {
+                "text": "Well shit",
+                "outcome": {
+                  "strength": -5,
+                  "happiness": -8
+                }
+              }
+            ],
+            "reactions": [
+              {
+                "sender": "General",
+                "text": "Well they lost a lot of people and land",
+                "type": "left"
+              },
+              {
+                "sender": "Representative",
+                "text": "They blame us ofcourse",
+                "type": "left"
+              },
+              {
+                "sender": "Journalist",
+                "text": "People kinda hate us",
+                "type": "left"
+              },
+              {
+                "sender": "SJW",
+                "text": "I wouldn't say kinda",
+                "type": "left"
+              },
+              {
+                "sender": "General",
+                "text": "Our enemies think we are weak",
+                "type": "left"
+              }
+            ],
+            "filters": [
+              {
+                "amount": 60,
+                "stat": "strength",
+                "type": "less"
+              }
+            ],
+            "priority": 0
+          },
+          {
+            "id": "lsy2ibkkrzld62jdpzm3",
+            "answers": [
+              {
+                "text": "They are welcome?",
+                "outcome": {
+                  "strength": 3,
+                  "happiness": 3
+                }
+              }
+            ],
+            "reactions": [
+              {
+                "sender": "General",
+                "text": "They got scared 🥱",
+                "type": "left"
+              },
+              {
+                "sender": "General",
+                "text": "They know how strong we are",
+                "type": "left"
+              },
+              {
+                "sender": "Chad",
+                "text": "SOOO WHAT ABOUT MY JET",
+                "type": "left"
+              },
+              {
+                "sender": "Representative",
+                "text": "cool",
+                "type": "left"
+              },
+              {
+                "sender": "Representative",
+                "text": "Anyway our allies are thanking us",
+                "type": "left"
+              }
+            ],
+            "filters": [
+              {
+                "amount": 60,
+                "stat": "strength",
+                "type": "more"
+              }
+            ],
+            "priority": 0
+          }
+        ]
+      }
+    ],
+    "reactions": [
+      {
+        "sender": "General",
+        "text": "war",
+        "type": "image"
+      },
+      {
+        "sender": "General",
+        "text": "Our long time enemy is moving their troops to our allies border",
+        "type": "left"
+      },
+      {
+        "sender": "General",
+        "text": "it is war",
+        "type": "left"
+      },
+      {
+        "sender": "General",
+        "text": "What we should do? Should we help?",
+        "type": "left"
+      },
+      {
+        "sender": "SJW",
+        "text": "We should do nothing 🤮",
+        "type": "left"
+      },
+      {
+        "sender": "Representative",
+        "text": "OH shut up",
+        "type": "left"
+      }
+    ],
+    "priority": 0
+  },
+  {
+    "id": "r750o92nadotj24t2r28",
+    "answers": [
+      {
+        "text": "Let's ban leaving our GREAT MU 😡",
+        "outcome": {
+          "happiness": -8,
+          "strength": 5
+        }
+      },
+      {
+        "text": "Well shit happens 🥱",
+        "outcome": {
+          "economy": -3
+        }
+      },
+      {
+        "text": "Why?",
+        "outcome": {},
+        "nextDialogs": [
+          {
+            "id": "a0ivoivoff85o3ja55o2",
+            "answers": [
+              {
+                "text": "Their loss 👋",
+                "outcome": {
+                  "happiness": -3,
+                  "economy": -3
+                }
+              },
+              {
+                "text": "I promise to do better🙃",
+                "outcome": {
+                  "happiness": 3,
+                  "economy": -3
+                }
+              }
+            ],
+            "reactions": [
+              {
+                "sender": "Representative",
+                "text": "Well",
+                "type": "left"
+              },
+              {
+                "sender": "Representative",
+                "text": "They don't like how we do things",
+                "type": "left"
+              },
+              {
+                "sender": "SJW",
+                "text": "SHOCKED? 🥱",
+                "type": "left"
+              }
+            ],
+            "priority": 0
+          }
+        ]
+      }
+    ],
+    "reactions": [
+      {
+        "sender": "Representative",
+        "text": "Generation Z wants to leave the country",
+        "type": "left"
+      },
+      {
+        "sender": "Representative",
+        "text": "They say they are not happy",
+        "type": "left"
+      },
+      {
+        "sender": "Teacher",
+        "text": "People we educated are leaving",
+        "type": "left"
+      },
+      {
+        "sender": "Teacher",
+        "text": "This is a great loss 🙃",
+        "type": "left"
+      }
+    ],
+    "filters": [
+      {
+        "amount": 40,
+        "stat": "happiness",
+        "type": "less"
+      },
+      {
+        "amount": 60,
+        "stat": "economy",
+        "type": "less"
+      }
+    ],
+    "priority": 0
+  },
+  {
+    "id": "5ib4jgu83r5e0dvfjybv",
+    "answers": [
+      {
+        "text": "We can use them when we need them",
+        "outcome": {},
+        "nextDialogs": [
+          {
+            "id": "71gzlsnemb2t8kd857u0",
+            "answers": [
+              {
+                "text": "Okey",
+                "outcome": {
+                  "happiness": -8,
+                  "strength": -8,
+                  "bank": 5
+                }
+              }
+            ],
+            "reactions": [
+              {
+                "sender": "General",
+                "text": "You know they will continue doing the things they do",
+                "type": "left"
+              },
+              {
+                "sender": "General",
+                "text": "People are getting hurt every day",
+                "type": "left"
+              },
+              {
+                "sender": "SJW",
+                "text": "You are the best 🥳",
+                "type": "left"
+              },
+              {
+                "sender": "SJW",
+                "text": "Let them talk their way",
+                "type": "left"
+              }
+            ],
+            "priority": 0
+          }
+        ]
+      },
+      {
+        "text": "Let's find out why they are founded",
+        "outcome": {},
+        "nextDialogs": [
+          {
+            "id": "t53tfjfb3jyi9jl37hdm",
+            "answers": [
+              {
+                "text": "Let's publish this findings and arrest all of them. Do what is necessary",
+                "outcome": {
+                  "strength": 3,
+                  "civilization": 3,
+                  "happiness": 3,
+                  "economy": 3,
+                  "religion": 3
+                }
+              },
+              {
+                "text": "Let's call them for a live discussion on tv",
+                "outcome": {},
+                "nextDialogs": [
+                  {
+                    "id": "ycp749a90lf2bccsjaot",
+                    "answers": [
+                      {
+                        "text": "Again, anounce they were only looking for blood and money",
+                        "outcome": {
+                          "economy": 5,
+                          "strength": 5,
+                          "happiness": 5,
+                          "religion": 5,
+                          "civilization": 5
+                        }
+                      }
+                    ],
+                    "reactions": [
+                      {
+                        "sender": "Representative",
+                        "text": "We reached them and said their representative will not be arrested",
+                        "type": "left"
+                      },
+                      {
+                        "sender": "Representative",
+                        "text": "We waited quite a while but they are not responding",
+                        "type": "left"
+                      },
+                      {
+                        "sender": "Journalist",
+                        "text": "They are losing their support from people",
+                        "type": "left"
+                      },
+                      {
+                        "sender": "General",
+                        "text": "They never represented anybody so not suprising",
+                        "type": "left"
+                      }
+                    ],
+                    "priority": 0
+                  }
+                ]
+              }
+            ],
+            "reactions": [
+              {
+                "sender": "Representative",
+                "text": "Our investigations are pointing out they are financed by rival countries",
+                "type": "left"
+              },
+              {
+                "sender": "Representative",
+                "text": "At this point I don't think they want something",
+                "type": "left"
+              },
+              {
+                "sender": "Representative",
+                "text": "They just want to get more money from those countries 🤮",
+                "type": "left"
+              }
+            ],
+            "priority": 0
+          }
+        ]
+      },
+      {
+        "text": "Go in guns blazing and kill everyone connected 😈",
+        "outcome": {},
+        "nextDialogs": [
+          {
+            "id": "n4ev3rkmi6lhcm12965j",
+            "answers": [
+              {
+                "text": "Fuck them. Kill everybody. They are connected, they are dead.😡",
+                "outcome": {
+                  "happiness": -8,
+                  "strength": 8
+                }
+              },
+              {
+                "text": "Let's call them for a live discussion on tv",
+                "outcome": {},
+                "nextDialogs": [
+                  {
+                    "id": "z1aci6n4angp6719iobd",
+                    "answers": [
+                      {
+                        "text": "Again, anounce they were only looking for blood and money",
+                        "outcome": {
+                          "economy": 3,
+                          "strength": 3,
+                          "happiness": 3,
+                          "religion": 3,
+                          "civilization": 3
+                        }
+                      }
+                    ],
+                    "reactions": [
+                      {
+                        "sender": "Representative",
+                        "text": "We reached them and said their representative will not be arrested",
+                        "type": "left"
+                      },
+                      {
+                        "sender": "Representative",
+                        "text": "We waited quite a while but they are not responding",
+                        "type": "left"
+                      },
+                      {
+                        "sender": "Journalist",
+                        "text": "They are losing their support from people",
+                        "type": "left"
+                      },
+                      {
+                        "sender": "General",
+                        "text": "They never represented anybody so not suprising",
+                        "type": "left"
+                      }
+                    ],
+                    "priority": 0
+                  }
+                ]
+              }
+            ],
+            "reactions": [
+              {
+                "sender": "Journalist",
+                "text": "Things are getting worse",
+                "type": "left"
+              },
+              {
+                "sender": "Representative",
+                "text": "This can get big real fast",
+                "type": "left"
+              },
+              {
+                "sender": "SJW",
+                "text": "Aren't you just attacking minorities?",
+                "type": "left"
+              },
+              {
+                "sender": "General",
+                "text": "We are in the same chat",
+                "type": "left"
+              },
+              {
+                "sender": "General",
+                "text": "You saw all the messages",
+                "type": "left"
+              },
+              {
+                "sender": "General",
+                "text": "and think this is about minorities 🙃",
+                "type": "left"
+              },
+              {
+                "sender": "Representative",
+                "text": "This is their propaganda",
+                "type": "left"
+              },
+              {
+                "sender": "Representative",
+                "text": "They are saying we are attacking minorities",
+                "type": "left"
+              }
+            ],
+            "priority": 0
+          }
+        ]
+      }
+    ],
+    "reactions": [
+      {
+        "sender": "Journalist",
+        "text": "terroristAttack",
+        "type": "image"
+      },
+      {
+        "sender": "Journalist",
+        "text": "Terror organizations starting to be more active every day 🙄",
+        "type": "left"
+      },
+      {
+        "sender": "SJW",
+        "text": "They are saying they are peacefull 🤔",
+        "type": "left"
+      },
+      {
+        "sender": "Judge",
+        "text": "Because bombing buildings are quite peacefull 🤮",
+        "type": "left"
+      },
+      {
+        "sender": "Representative",
+        "text": "How should we handle this?",
+        "type": "left"
+      },
+      {
+        "sender": "General",
+        "text": "Can we bomb them? 😇",
+        "type": "left"
+      }
+    ],
+    "filters": [
+      {
+        "amount": 40,
+        "stat": "strength",
+        "type": "less"
+      }
+    ],
+    "priority": 0
+  },
+  {
+    "id": "ar29op0k5j91h5idmor2",
+    "answers": [
+      {
+        "text": "Find out who they are",
+        "outcome": {},
+        "nextDialogs": [
+          {
+            "id": "aomublcsm0kdcsrhatl5",
+            "answers": [
+              {
+                "text": "Let him talk",
+                "outcome": {
+                  "religion": 5
+                },
+                "nextDialogs": [
+                  {
+                    "id": "i231mpfy24g33l68yr7z",
+                    "answers": [
+                      {
+                        "text": "Let him talk",
+                        "outcome": {
+                          "religion": 5
+                        },
+                        "nextDialogs": [
+                          {
+                            "id": "2vejf0rcouoszmb5j02m",
+                            "answers": [
+                              {
+                                "text": "I SUPPORT THEM 🔥🔥🔥",
+                                "outcome": {
+                                  "religion": 5
+                                },
+                                "nextDialogs": [
+                                  {
+                                    "id": "hul8z7an9dk4z5ebbbik",
+                                    "answers": [
+                                      {
+                                        "text": "I DONT CARE. HE IS THE MESSENGER OF THE GOD",
+                                        "outcome": {
+                                          "religion": 5
+                                        },
+                                        "nextDialogs": [
+                                          {
+                                            "id": "2ng8agj2o29kgousrhiy",
+                                            "answers": [
+                                              {
+                                                "text": "DO SOMETHING",
+                                                "outcome": {},
+                                                "end": true,
+                                                "endMessage": "Mr. President, It seems like people sacrificed the leader before us. Let's not meddle with religion too much."
+                                              }
+                                            ],
+                                            "reactions": [
+                                              {
+                                                "sender": "General",
+                                                "text": "They are in front of the palace",
+                                                "type": "left"
+                                              },
+                                              {
+                                                "sender": "General",
+                                                "text": "We can't stop them",
+                                                "type": "left"
+                                              },
+                                              {
+                                                "sender": "Representative",
+                                                "text": "They are saying you are not fit to lead the gods nation",
+                                                "type": "left"
+                                              },
+                                              {
+                                                "sender": "Representative",
+                                                "text": "They are going to sacrifice us!!",
+                                                "type": "left"
+                                              },
+                                              {
+                                                "sender": "Representative",
+                                                "text": "cultMurder",
+                                                "type": "image"
+                                              }
+                                            ],
+                                            "filters": [
+                                              {
+                                                "amount": 70,
+                                                "stat": "strength",
+                                                "type": "less"
+                                              }
+                                            ],
+                                            "priority": 0
+                                          },
+                                          {
+                                            "id": "1oaa4th8yz3l4pvkydjt",
+                                            "answers": [
+                                              {
+                                                "text": "Catch the so called leader and put a gun behind his head in the palace balcony. Make him shout 'THIS IS THE GODS COUNTRY! HE IS THE GOD!!!''",
+                                                "outcome": {},
+                                                "nextDialogs": [
+                                                  {
+                                                    "id": "tk8i6okuvitvllavznjh",
+                                                    "answers": [
+                                                      {
+                                                        "text": "AND NOW I AM GOD",
+                                                        "outcome": {},
+                                                        "end": true,
+                                                        "endMessage": "Mr.President, It seems like the leader before us became god 🙃 Yeah, I don't get it either"
+                                                      }
+                                                    ],
+                                                    "reactions": [
+                                                      {
+                                                        "sender": "Representative",
+                                                        "text": "HOLY FUCKING SHIT",
+                                                        "type": "left"
+                                                      },
+                                                      {
+                                                        "sender": "Chad",
+                                                        "text": "FUCK THIS IS HAPPENING",
+                                                        "type": "left"
+                                                      },
+                                                      {
+                                                        "sender": "Priest",
+                                                        "text": "HOW CAN YOU SAY SOMETHING LIKE THIS!!!",
+                                                        "type": "left"
+                                                      },
+                                                      {
+                                                        "sender": "Representative",
+                                                        "text": "I will silence the priest 🤫",
+                                                        "type": "left"
+                                                      },
+                                                      {
+                                                        "sender": "Priest",
+                                                        "text": "WHAT NO NO PLEASE DONT",
+                                                        "type": "left"
+                                                      },
+                                                      {
+                                                        "sender": "Representative",
+                                                        "text": "Now the nuisance is gone",
+                                                        "type": "left"
+                                                      },
+                                                      {
+                                                        "sender": "General",
+                                                        "text": "He is in the balcony",
+                                                        "type": "left"
+                                                      },
+                                                      {
+                                                        "sender": "General",
+                                                        "text": "Giving his final speech before getting assasinated by 'evil minorities'",
+                                                        "type": "left"
+                                                      },
+                                                      {
+                                                        "sender": "Representative",
+                                                        "text": "cult",
+                                                        "type": "image"
+                                                      }
+                                                    ],
+                                                    "priority": 0
+                                                  }
+                                                ]
+                                              }
+                                            ],
+                                            "reactions": [
+                                              {
+                                                "sender": "General",
+                                                "text": "They are in front of the palace",
+                                                "type": "left"
+                                              },
+                                              {
+                                                "sender": "General",
+                                                "text": "There is a lot of them but we can handle them",
+                                                "type": "left"
+                                              }
+                                            ],
+                                            "filters": [
+                                              {
+                                                "amount": 70,
+                                                "stat": "strength",
+                                                "type": "more"
+                                              }
+                                            ],
+                                            "priority": 0
+                                          }
+                                        ]
+                                      }
+                                    ],
+                                    "reactions": [
+                                      {
+                                        "sender": "Priest",
+                                        "text": "THIS IS BLASHEMY 😡",
+                                        "type": "left"
+                                      },
+                                      {
+                                        "sender": "Priest",
+                                        "text": "I AM OUT",
+                                        "type": "left"
+                                      },
+                                      {
+                                        "sender": "Representative",
+                                        "text": "Are we seriously doing this?",
+                                        "type": "left"
+                                      },
+                                      {
+                                        "sender": "General",
+                                        "text": "Man....",
+                                        "type": "left"
+                                      },
+                                      {
+                                        "sender": "General",
+                                        "text": "Things will be uncontrollable after this",
+                                        "type": "left"
+                                      },
+                                      {
+                                        "sender": "General",
+                                        "text": "STOP THIS",
+                                        "type": "left"
+                                      },
+                                      {
+                                        "sender": "Representative",
+                                        "text": "They called a national movement and executing 'infidels' in the streets",
+                                        "type": "left"
+                                      },
+                                      {
+                                        "sender": "Representative",
+                                        "text": "They starting marching to presidential palace 🙃",
+                                        "type": "left"
+                                      }
+                                    ],
+                                    "priority": 0
+                                  }
+                                ]
+                              },
+                              {
+                                "text": "WTF! Arrest them",
+                                "outcome": {},
+                                "nextDialogs": [
+                                  {
+                                    "id": "ckphsuh635peno9vfgje",
+                                    "answers": [
+                                      {
+                                        "text": "Shit! This was close.",
+                                        "outcome": {
+                                          "happiness": -3,
+                                          "strength": -3,
+                                          "religion": -3
+                                        }
+                                      }
+                                    ],
+                                    "reactions": [
+                                      {
+                                        "sender": "General",
+                                        "text": "They are blocking our way in",
+                                        "type": "left"
+                                      },
+                                      {
+                                        "sender": "General",
+                                        "text": "but we are ready",
+                                        "type": "left"
+                                      },
+                                      {
+                                        "sender": "General",
+                                        "text": "It will just take a little longer",
+                                        "type": "left"
+                                      },
+                                      {
+                                        "sender": "Journalist",
+                                        "text": "We are 'mistakenly' letting people know this guy has some crimes including rape",
+                                        "type": "left"
+                                      },
+                                      {
+                                        "sender": "Representative",
+                                        "text": "People got clamer",
+                                        "type": "left"
+                                      }
+                                    ],
+                                    "priority": 0
+                                  }
+                                ]
+                              },
+                              {
+                                "text": "Send in a team. Kill the guy already!",
+                                "outcome": {},
+                                "nextDialogs": [
+                                  {
+                                    "id": "zty9b9ypfzfpnu65vk73",
+                                    "answers": [
+                                      {
+                                        "text": "Declare martial law call in the army and clean the streets",
+                                        "outcome": {
+                                          "happiness": -5,
+                                          "strength": -5,
+                                          "religion": -5
+                                        }
+                                      }
+                                    ],
+                                    "reactions": [
+                                      {
+                                        "sender": "Chad",
+                                        "text": "HOLY SHIT FOR REAL",
+                                        "type": "left"
+                                      },
+                                      {
+                                        "sender": "General",
+                                        "text": "Team is getting in",
+                                        "type": "left"
+                                      },
+                                      {
+                                        "sender": "Chad",
+                                        "text": "THIS IS WHAT I CALL TELEVISION",
+                                        "type": "left"
+                                      },
+                                      {
+                                        "sender": "Representative",
+                                        "text": "IS THIS STILL LIVE!?",
+                                        "type": "left"
+                                      },
+                                      {
+                                        "sender": "Journalist",
+                                        "text": "Yes everyone is watching",
+                                        "type": "left"
+                                      },
+                                      {
+                                        "sender": "Journalist",
+                                        "text": "We can't reach the camera room",
+                                        "type": "left"
+                                      },
+                                      {
+                                        "sender": "General",
+                                        "text": "The civilians...",
+                                        "type": "left"
+                                      },
+                                      {
+                                        "sender": "General",
+                                        "text": "Well the terrorist are blocking the path",
+                                        "type": "left"
+                                      },
+                                      {
+                                        "sender": "General",
+                                        "text": "We are neutralized terrorists and the leader",
+                                        "type": "left"
+                                      },
+                                      {
+                                        "sender": "Representative",
+                                        "text": "We are arresting the remaining ones for hate crimes",
+                                        "type": "left"
+                                      },
+                                      {
+                                        "sender": "Journalist",
+                                        "text": "Followers outside are calling him a hero for telling the 'truth'",
+                                        "type": "left"
+                                      },
+                                      {
+                                        "sender": "Journalist",
+                                        "text": "They are burning cars buildings",
+                                        "type": "left"
+                                      },
+                                      {
+                                        "sender": "Journalist",
+                                        "text": "Stabbing everyone they find not from 'them'",
+                                        "type": "left"
+                                      }
+                                    ],
+                                    "priority": 0
+                                  }
+                                ]
+                              }
+                            ],
+                            "reactions": [
+                              {
+                                "sender": "Journalist",
+                                "text": "I am on the grounds",
+                                "type": "left"
+                              },
+                              {
+                                "sender": "Journalist",
+                                "text": "There are quite a bit of people here",
+                                "type": "left"
+                              },
+                              {
+                                "sender": "Representative",
+                                "text": "We placed a lot of police here but not enough",
+                                "type": "left"
+                              },
+                              {
+                                "sender": "Journalist",
+                                "text": "HE JUST SAID TO HIS FOLLOWERS THEY SHOULD KILL EVERYONE THAT IS NOT FROM THE CULT",
+                                "type": "left"
+                              },
+                              {
+                                "sender": "Journalist",
+                                "text": "THEY ARE CHANTING 'DEATH TO ALL BUT US' TOGETHER",
+                                "type": "left"
+                              }
+                            ],
+                            "priority": 0
+                          }
+                        ]
+                      },
+                      {
+                        "text": "Arrest him",
+                        "outcome": {},
+                        "nextDialogs": [
+                          {
+                            "id": "lymakp81jmzmlo79ppda",
+                            "answers": [
+                              {
+                                "text": "Find something 😈",
+                                "outcome": {
+                                  "strength": 5,
+                                  "religion": -5
+                                }
+                              },
+                              {
+                                "text": "Let him go",
+                                "outcome": {
+                                  "happiness": 3
+                                }
+                              }
+                            ],
+                            "reactions": [
+                              {
+                                "sender": "General",
+                                "text": "He is in the jail",
+                                "type": "left"
+                              },
+                              {
+                                "sender": "Judge",
+                                "text": "but we have nothing on him to jail him",
+                                "type": "left"
+                              },
+                              {
+                                "sender": "SJW",
+                                "text": "You guys are disgusting 🤮🤮🤮",
+                                "type": "left"
+                              }
+                            ],
+                            "priority": 0
+                          }
+                        ]
+                      },
+                      {
+                        "text": "Don't let them have the meeting",
+                        "outcome": {
+                          "strength": 3
+                        }
+                      }
+                    ],
+                    "reactions": [
+                      {
+                        "sender": "Journalist",
+                        "text": "He is saying he is going to say something quite important in a public meeting",
+                        "type": "left"
+                      },
+                      {
+                        "sender": "Representative",
+                        "text": "I don't think this will end in a good way",
+                        "type": "left"
+                      },
+                      {
+                        "sender": "General",
+                        "text": "I am concerned",
+                        "type": "left"
+                      },
+                      {
+                        "sender": "Representative",
+                        "text": "What are we doing?",
+                        "type": "left"
+                      }
+                    ],
+                    "priority": 0
+                  }
+                ]
+              },
+              {
+                "text": "Arrest him",
+                "outcome": {
+                  "religion": -5
+                }
+              },
+              {
+                "text": "Make sure he goes missing 😇",
+                "outcome": {
+                  "strength": 8,
+                  "happiness": -5,
+                  "religion": -5
+                }
+              }
+            ],
+            "reactions": [
+              {
+                "sender": "Representative",
+                "text": "We found out he has a criminal background",
+                "type": "left"
+              },
+              {
+                "sender": "Representative",
+                "text": "This looks shady",
+                "type": "left"
+              },
+              {
+                "sender": "Journalist",
+                "text": "I am getting some new",
+                "type": "left"
+              },
+              {
+                "sender": "Journalist",
+                "text": "He is preaching that some minorities that is living in our country is born evil",
+                "type": "left"
+              }
+            ],
+            "priority": 0
+          }
+        ]
+      }
+    ],
+    "reactions": [
+      {
+        "sender": "Journalist",
+        "text": "cult",
+        "type": "image"
+      },
+      {
+        "sender": "Journalist",
+        "text": "There is a new religious cult being founded in our country",
+        "type": "left"
+      },
+      {
+        "sender": "Journalist",
+        "text": "They are helping poor people for free",
+        "type": "left"
+      },
+      {
+        "sender": "Janitor",
+        "text": "Because people always help people for free 🙄",
+        "type": "left"
+      },
+      {
+        "sender": "Priest",
+        "text": "We should just close all cults. This is blashemy! 🔥",
+        "type": "left"
+      },
+      {
+        "sender": "Representative",
+        "text": "We are not a religious state as I know",
+        "type": "left"
+      },
+      {
+        "sender": "Chad",
+        "text": "Is it one of the fun cults?? 😈😈😈😈",
+        "type": "left"
+      },
+      {
+        "sender": "Priest",
+        "text": "KIDS SHOULD STAY OUT OF THIS",
+        "type": "left"
+      }
+    ],
+    "priority": 0
+  },
+  {
+    "id": "glvrt2r9f7eezbt2fjh6",
+    "answers": [
+      {
+        "text": "Pick someone from top 10 randomly",
+        "outcome": {
+          "civilization": 3
+        }
+      },
+      {
+        "text": "Let's make a survey for this ofcourse participation in not free",
+        "outcome": {
+          "civilization": 3,
+          "happiness": 3,
+          "economy": 3
+        }
+      },
+      {
+        "text": "I will represent our great nation",
+        "outcome": {},
+        "nextDialogs": [
+          {
+            "id": "zszm7durdus2j0i7k7or",
+            "answers": [
+              {
+                "text": "Don't you guys trust me? 😏",
+                "outcome": {
+                  "civilization": -3,
+                  "happiness": -3,
+                  "strength": 3
+                }
+              }
+            ],
+            "reactions": [
+              {
+                "sender": "Chad",
+                "text": "Bro I was joking wtf",
+                "type": "left"
+              },
+              {
+                "sender": "SJW",
+                "text": "What about the purple hair? Are you going to dye too?",
+                "type": "left"
+              },
+              {
+                "sender": "Representative",
+                "text": "Are you serious?",
+                "type": "left"
+              }
+            ],
+            "priority": 0
+          }
+        ]
+      }
+    ],
+    "reactions": [
+      {
+        "sender": "Representative",
+        "text": "We need to pick a singer for WorldVision",
+        "type": "left"
+      },
+      {
+        "sender": "Representative",
+        "text": "Do you have any picks? 🤔",
+        "type": "left"
+      },
+      {
+        "sender": "Chad",
+        "text": "What about me 😏",
+        "type": "left"
+      },
+      {
+        "sender": "SJW",
+        "text": "I have someone in mind",
+        "type": "left"
+      },
+      {
+        "sender": "Chad",
+        "text": "Let me guess someone with purple hair",
+        "type": "left"
+      },
+      {
+        "sender": "Chad",
+        "text": "Will you support me if I dye my hair?",
+        "type": "left"
+      }
+    ],
+    "priority": 0
+  },
+  {
+    "id": "00bfe15n01dyesv9nz7j",
+    "answers": [
+      {
+        "text": "Ok I will allow it",
+        "outcome": {
+          "economy": -3,
+          "strength": 3
+        }
+      },
+      {
+        "text": "Only Ken gets a raise 😡",
+        "nextDialogs": [
+          {
+            "id": "dodbpynpg7of9aa7o4us",
+            "answers": [
+              {
+                "text": "Just kidding nobody gets a raise 🙃",
+                "outcome": {
+                  "strength": -3
+                }
+              },
+              {
+                "text": "No I am serious",
+                "outcome": {
+                  "happiness": 3,
+                  "strength": -3
+                }
+              }
+            ],
+            "reactions": [
+              {
+                "sender": "Representative",
+                "text": "Are you serious?",
+                "type": "left"
+              },
+              {
+                "sender": "Economist",
+                "text": "Bro don't mess with us like this",
+                "type": "left"
+              },
+              {
+                "sender": "Janitor",
+                "text": "FINALLY I CAN STOP WORKING 2 JOBS 🥳",
+                "type": "left"
+              }
+            ],
+            "filters": [],
+            "priority": 0
+          }
+        ]
+      },
+      {
+        "text": "You are right I SHOULD GET A RAISE 😇",
+        "outcome": {
+          "economy": -3,
+          "bank": 3
+        }
+      }
+    ],
+    "reactions": [
+      {
+        "sender": "Representative",
+        "text": "Hey man 😃",
+        "type": "left"
+      },
+      {
+        "sender": "Representative",
+        "text": "We talked with each other",
+        "type": "left"
+      },
+      {
+        "sender": "Representative",
+        "text": "and we think we deserve a raise",
+        "type": "left"
+      },
+      {
+        "sender": "Economist",
+        "text": "We can spare some money 😏",
+        "type": "left"
+      },
+      {
+        "sender": "Janitor",
+        "text": "Do I get a raise too!? 🤑",
+        "type": "left"
+      },
+      {
+        "sender": "Chad",
+        "text": "Ofcourse not",
+        "type": "left"
+      },
+      {
+        "sender": "Judge",
+        "text": "Chad you don't even have a salary",
+        "type": "left"
+      },
+      {
+        "sender": "Judge",
+        "text": "Actually why are you here? 🙄",
+        "type": "left"
+      }
+    ],
+    "filters": [],
+    "priority": 0
+  },
+  {
+    "id": "63mezfom4fblnidmbet8",
+    "answers": [
+      {
+        "text": "Take their so called leader and send them to space",
+        "outcome": {},
+        "nextDialogs": [
+          {
+            "id": "k3d8r546frmzr0ol8h8c",
+            "answers": [
+              {
+                "text": "DO IT",
+                "outcome": {},
+                "nextDialogs": [
+                  {
+                    "id": "v26kkuihdktyclso2fn2",
+                    "answers": [
+                      {
+                        "text": "What did I expect?",
+                        "outcome": {
+                          "civilization": 3,
+                          "economy": -3
+                        }
+                      }
+                    ],
+                    "reactions": [
+                      {
+                        "sender": "Engineer",
+                        "text": "We launched 3 of them to the end of the atmosphere",
+                        "type": "left"
+                      },
+                      {
+                        "sender": "Engineer",
+                        "text": "They have seen everything",
+                        "type": "left"
+                      },
+                      {
+                        "sender": "Engineer",
+                        "text": "They are saying we messed with the windows and it is fake",
+                        "type": "left"
+                      }
+                    ],
+                    "filters": [],
+                    "priority": 0
+                  }
+                ]
+              },
+              {
+                "text": "Just kidding",
+                "outcome": {}
+              }
+            ],
+            "reactions": [
+              {
+                "sender": "Chad",
+                "text": "AHAHAHHAHAHA YOU ARE CRAZY 🙃🙃",
+                "type": "left"
+              },
+              {
+                "sender": "Economist",
+                "text": "You do know this will cost us right 🙄",
+                "type": "left"
+              },
+              {
+                "sender": "Economist",
+                "text": "Space flights are not cheap",
+                "type": "left"
+              },
+              {
+                "sender": "Representative",
+                "text": "You heard the leader",
+                "type": "left"
+              }
+            ],
+            "filters": [],
+            "priority": 0
+          }
+        ]
+      },
+      {
+        "text": "Well they have rights to protest",
+        "outcome": {},
+        "nextDialogs": [
+          {
+            "id": "1cm1sa1a7hjvvk3mi1ub",
+            "answers": [
+              {
+                "text": "They get close. They get shot.",
+                "outcome": {},
+                "nextDialogs": [
+                  {
+                    "id": "5bffcho9iah8gy60faas",
+                    "answers": [
+                      {
+                        "text": "Well what did you expect",
+                        "outcome": {
+                          "strength": 3
+                        }
+                      }
+                    ],
+                    "reactions": [
+                      {
+                        "sender": "General",
+                        "text": "We fired some warning shots",
+                        "type": "left"
+                      },
+                      {
+                        "sender": "Representative",
+                        "text": "Nobody dares to get close",
+                        "type": "left"
+                      },
+                      {
+                        "sender": "Chad",
+                        "text": "BOOOOORING",
+                        "type": "left"
+                      }
+                    ],
+                    "filters": [],
+                    "priority": 0
+                  }
+                ]
+              },
+              {
+                "text": "Announce World is a cube!",
+                "outcome": {},
+                "nextDialogs": [
+                  {
+                    "id": "oiu7pkzgj90a0ukzbnz6",
+                    "answers": [
+                      {
+                        "text": "This is a big victory for cubers like us",
+                        "outcome": {
+                          "civilization": -6
+                        }
+                      }
+                    ],
+                    "reactions": [
+                      {
+                        "sender": "Dr",
+                        "text": "Well",
+                        "type": "left"
+                      },
+                      {
+                        "sender": "Dr",
+                        "text": "You are disgusting",
+                        "type": "left"
+                      },
+                      {
+                        "sender": "Dr",
+                        "text": "You know if you say something some people will believe",
+                        "type": "left"
+                      },
+                      {
+                        "sender": "Dr",
+                        "text": "You are the president",
+                        "type": "left"
+                      },
+                      {
+                        "sender": "Chad",
+                        "text": "Now",
+                        "type": "left"
+                      },
+                      {
+                        "sender": "Chad",
+                        "text": "Is it a cube or not?",
+                        "type": "left"
+                      },
+                      {
+                        "sender": "Journalist",
+                        "text": "After the announcement there are new groups called cube earth",
+                        "type": "left"
+                      }
+                    ],
+                    "filters": [],
+                    "priority": 0
+                  }
+                ]
+              }
+            ],
+            "reactions": [
+              {
+                "sender": "Journalist",
+                "text": "I am getting urgent news",
+                "type": "left"
+              },
+              {
+                "sender": "Journalist",
+                "text": "They are saying they will raid out space research center and let people know the 'truth'",
+                "type": "left"
+              },
+              {
+                "sender": "Dr",
+                "text": "WTF",
+                "type": "left"
+              },
+              {
+                "sender": "Dr",
+                "text": "This is crazy. DO SOMETHING",
+                "type": "left"
+              },
+              {
+                "sender": "General",
+                "text": "Just say the word",
+                "type": "left"
+              }
+            ],
+            "filters": [],
+            "priority": 0
+          }
+        ]
+      }
+    ],
+    "reactions": [
+      {
+        "sender": "Journalist",
+        "text": "flatEarth",
+        "type": "image"
+      },
+      {
+        "sender": "Journalist",
+        "text": "Lately there are a lot of flat earthers",
+        "type": "left"
+      },
+      {
+        "sender": "Journalist",
+        "text": "They are protesting our 'false' science 🙃",
+        "type": "left"
+      },
+      {
+        "sender": "Dr",
+        "text": "I just",
+        "type": "left"
+      },
+      {
+        "sender": "Dr",
+        "text": "These people are ",
+        "type": "left"
+      },
+      {
+        "sender": "Dr",
+        "text": "Ok I am not even going to comment about this",
+        "type": "left"
+      }
+    ],
+    "filters": [
+      {
+        "amount": 60,
+        "stat": "civilization",
+        "type": "less"
+      }
+    ],
+    "priority": 0
+  },
+  {
+    "id": "ud5rett6f008zu416nly",
+    "answers": [
+      {
+        "text": "LETS GO 🥳",
+        "outcome": {},
+        "nextDialogs": [
+          {
+            "id": "ylda3h3zhrfchsr59g2n",
+            "answers": [
+              {
+                "text": "A religious ceremony",
+                "outcome": {
+                  "religion": 5,
+                  "happiness": -3,
+                  "economy": 3
+                }
+              },
+              {
+                "text": "A military one",
+                "outcome": {
+                  "strength": 5,
+                  "happiness": -3,
+                  "economy": 3
+                }
+              },
+              {
+                "text": "Let youth pick",
+                "outcome": {
+                  "happiness": 5,
+                  "economy": 3
+                }
+              },
+              {
+                "text": "A music fest",
+                "outcome": {
+                  "happiness": 3,
+                  "economy": 3
+                }
+              },
+              {
+                "text": "No need for concept I can sing out great anthems",
+                "outcome": {
+                  "bank": 5,
+                  "happiness": -3,
+                  "strength": 3,
+                  "economy": 3
+                }
+              }
+            ],
+            "reactions": [
+              {
+                "sender": "Representative",
+                "text": "So, what kind of a festival will it be?",
+                "type": "left"
+              },
+              {
+                "sender": "Chad",
+                "text": "OFCOURSE EDM",
+                "type": "left"
+              },
+              {
+                "sender": "Economist",
+                "text": "Can't we do a rock fest",
+                "type": "left"
+              },
+              {
+                "sender": "General",
+                "text": "We can make a military fest showing off our military",
+                "type": "left"
+              },
+              {
+                "sender": "Priest",
+                "text": "A religious ceremony",
+                "type": "left"
+              }
+            ],
+            "filters": [
+              {
+                "amount": 70,
+                "stat": "religion",
+                "type": "less"
+              }
+            ],
+            "priority": 0
+          },
+          {
+            "id": "h7hf045dltma8v1azp9h",
+            "answers": [
+              {
+                "text": "A RELIGIOUS CEREMONY",
+                "outcome": {
+                  "religion": 5,
+                  "strength": -5,
+                  "economy": 3
+                }
+              },
+              {
+                "text": "A RELIGIOUS CEREMONY",
+                "outcome": {
+                  "religion": 5,
+                  "strength": -5,
+                  "economy": 3
+                }
+              },
+              {
+                "text": "A RELIGIOUS CEREMONY",
+                "outcome": {
+                  "religion": 5,
+                  "strength": -5,
+                  "economy": 3
+                }
+              },
+              {
+                "text": "A RELIGIOUS CEREMONY",
+                "outcome": {
+                  "strength": -5,
+                  "religion": 5,
+                  "economy": 3
+                }
+              },
+              {
+                "text": "A RELIGIOUS CEREMONY",
+                "outcome": {
+                  "religion": 5,
+                  "strength": -5,
+                  "economy": 3
+                }
+              }
+            ],
+            "reactions": [
+              {
+                "sender": "Representative",
+                "text": "So, what kind of a festival will it be?",
+                "type": "left"
+              },
+              {
+                "sender": "Chad",
+                "text": "OFCOURSE EDM",
+                "type": "left"
+              },
+              {
+                "sender": "Economist",
+                "text": "Can't we do a rock fest",
+                "type": "left"
+              },
+              {
+                "sender": "General",
+                "text": "We can make a military fest showing off our military",
+                "type": "left"
+              },
+              {
+                "sender": "Priest",
+                "text": "A RELIGIOUS CEREMONY",
+                "type": "left"
+              }
+            ],
+            "filters": [
+              {
+                "amount": 70,
+                "stat": "religion",
+                "type": "more"
+              }
+            ],
+            "priority": 0
+          }
+        ]
+      },
+      {
+        "text": "We can't let our pure youth do indecent things in that festival",
+        "outcome": {
+          "economy": -5,
+          "religion": 5,
+          "civilization": -5
+        }
+      }
+    ],
+    "reactions": [
+      {
+        "sender": "Teacher",
+        "text": "After the exams students are stressed",
+        "type": "left"
+      },
+      {
+        "sender": "Teacher",
+        "text": "I think we need a festival",
+        "type": "left"
+      },
+      {
+        "sender": "SJW",
+        "text": "Second that 👍🏻",
+        "type": "left"
+      },
+      {
+        "sender": "Chad",
+        "text": "Third that 👍🏻",
+        "type": "left"
+      },
+      {
+        "sender": "Economist",
+        "text": "Well festivals mean selling stuff so I am in",
+        "type": "left"
+      }
+    ],
+    "filters": [],
+    "priority": 0
+  },
+  {
+    "id": "pbkmu0c76zz33g5k4iuf",
+    "answers": [
+      {
+        "text": "Well people should be a able to reach art even if they are poor",
+        "outcome": {
+          "economy": -3,
+          "civilization": -3,
+          "happiness": 3
+        }
+      },
+      {
+        "text": "Lets strengthen the laws",
+        "outcome": {
+          "economy": 3,
+          "strength": 3,
+          "civilization": 3
+        }
+      }
+    ],
+    "reactions": [
+      {
+        "sender": "Representative",
+        "text": "pirate",
+        "type": "image"
+      },
+      {
+        "sender": "Representative",
+        "text": "Artists of our country wants our piracy laws to be stricter",
+        "type": "left"
+      },
+      {
+        "sender": "Judge",
+        "text": "That actually makes sense 👍🏻",
+        "type": "left"
+      },
+      {
+        "sender": "SJW",
+        "text": "ART IS FOR PEOPLE AND SHOULD BE FREE 😡",
+        "type": "left"
+      },
+      {
+        "sender": "Judge",
+        "text": "Soo artists should not get their well deserved money? 🙄",
+        "type": "left"
+      },
+      {
+        "sender": "SJW",
+        "text": "yes? no? idk",
+        "type": "left"
+      }
+    ],
+    "filters": [],
+    "priority": 0
+  },
+  {
+    "id": "fjku3srgp58zkchzktoz",
+    "answers": [
+      {
+        "text": "Let's meet the referees 😈😈",
+        "outcome": {
+          "strength": 3,
+          "civilization": -6
+        }
+      },
+      {
+        "text": "We are watching this together in the front row !!!",
+        "outcome": {
+          "happiness": 3
+        }
+      },
+      {
+        "text": "Cool",
+        "outcome": {}
+      }
+    ],
+    "reactions": [
+      {
+        "sender": "Representative",
+        "text": "football",
+        "type": "image"
+      },
+      {
+        "sender": "Representative",
+        "text": "ITS FINALS",
+        "type": "left"
+      },
+      {
+        "sender": "Chad",
+        "text": "OOOOOOOO ⚽️⚽️⚽️⚽️⚽️⚽️⚽️⚽️⚽️⚽️",
+        "type": "left"
+      },
+      {
+        "sender": "Representative",
+        "text": "You favorite team vs they biggest rival",
+        "type": "left"
+      },
+      {
+        "sender": "Chad",
+        "text": "Everyone will be wathing this",
+        "type": "left"
+      },
+      {
+        "sender": "SJW",
+        "text": "This is so meaningless ",
+        "type": "left"
+      },
+      {
+        "sender": "SJW",
+        "text": "We could feed the poor with this money 🤮🤮",
+        "type": "left"
+      },
+      {
+        "sender": "Janitor",
+        "text": "You are so much fun at parties aren't you?",
+        "type": "left"
+      }
+    ],
+    "filters": [],
+    "priority": 0
+  },
+  {
+    "id": "rdeu08lae04pcj8zbgup",
+    "answers": [
+      {
+        "text": "Sure, send me one too",
+        "outcome": {
+          "civilization": 3,
+          "religion": -3
+        }
+      },
+      {
+        "text": "This is unnecessary. Only our god Mu can create life.",
+        "outcome": {
+          "religion": 3,
+          "civilization": -3
+        }
+      },
+      {
+        "text": "ONE WORD! CATGIRLS!!!!",
+        "outcome": {
+          "happiness": 3,
+          "civilization": 3,
+          "religion": -5
+        }
+      }
+    ],
+    "reactions": [
+      {
+        "sender": "Dr",
+        "text": "cat",
+        "type": "image"
+      },
+      {
+        "sender": "Dr",
+        "text": "Hi",
+        "type": "left"
+      },
+      {
+        "sender": "Dr",
+        "text": "We are planning to clone a cat",
+        "type": "left"
+      },
+      {
+        "sender": "Priest",
+        "text": "WE SHOULD NEVER TRY TO CREATE LIFE",
+        "type": "left"
+      },
+      {
+        "sender": "Priest",
+        "text": "THIS IS STRICTLY FORBIDDEN",
+        "type": "left"
+      },
+      {
+        "sender": "Priest",
+        "text": "YOU WILL NEVER BE ABLE TO DO IT TOO",
+        "type": "left"
+      },
+      {
+        "sender": "Dr",
+        "text": "What if we are succesfull?",
+        "type": "left"
+      },
+      {
+        "sender": "Dr",
+        "text": "Are you going to call me god?",
+        "type": "left"
+      }
+    ],
+    "filters": [],
+    "priority": 0
+  },
+  {
+    "id": "lzcm6fpk8iz48sgljz2r",
+    "answers": [
+      {
+        "text": "Well, lets say natural causes without any investigation",
+        "outcome": {},
+        "nextDialogs": [
+          {
+            "id": "l8lk2nu3u7o2zlikiifp",
+            "answers": [
+              {
+                "text": "CALM DOWN PLEASE",
+                "outcome": {},
+                "nextDialogs": [
+                  {
+                    "id": "i2vhdmmllrikah6rhcp5",
+                    "answers": [
+                      {
+                        "text": "Well we deserved it",
+                        "outcome": {},
+                        "end": true,
+                        "endMessage": "Last president got impeached. We should do less illegal bussiness."
+                      }
+                    ],
+                    "reactions": [
+                      {
+                        "sender": "Representative",
+                        "text": "Well",
+                        "type": "left"
+                      },
+                      {
+                        "sender": "Representative",
+                        "text": "She went and done it",
+                        "type": "left"
+                      },
+                      {
+                        "sender": "Representative",
+                        "text": "I think we are done",
+                        "type": "left"
+                      },
+                      {
+                        "sender": "Representative",
+                        "text": "prison",
+                        "type": "image"
+                      }
+                    ],
+                    "filters": [],
+                    "priority": 0
+                  }
+                ]
+              }
+            ],
+            "reactions": [
+              {
+                "sender": "Judge",
+                "text": "YOU THINK I WILL LET THIS BE 😡",
+                "type": "left"
+              },
+              {
+                "sender": "Judge",
+                "text": "I don't care how close we are!",
+                "type": "left"
+              },
+              {
+                "sender": "Judge",
+                "text": "This is 302 lives",
+                "type": "left"
+              },
+              {
+                "sender": "Representative",
+                "text": "WOwowowo calm down Mary",
+                "type": "left"
+              },
+              {
+                "sender": "Representative",
+                "text": "We can solve this",
+                "type": "left"
+              },
+              {
+                "sender": "Judge",
+                "text": "So now we are resurrecting people????",
+                "type": "left"
+              },
+              {
+                "sender": "Judge",
+                "text": "I am going to fucking impeach you",
+                "type": "left"
+              }
+            ],
+            "filters": [
+              {
+                "amount": 70,
+                "stat": "strength",
+                "type": "less"
+              }
+            ],
+            "priority": 0
+          },
+          {
+            "id": "3mm4nspy5ngczymhzjza",
+            "answers": [
+              {
+                "text": "Then  we are done.",
+                "outcome": {
+                  "strength": 5,
+                  "happiness": -5
+                }
+              }
+            ],
+            "reactions": [
+              {
+                "sender": "Judge",
+                "text": "You think I will leave this be? 😡",
+                "type": "left"
+              },
+              {
+                "sender": "General",
+                "text": "YES WE DO!",
+                "type": "left"
+              },
+              {
+                "sender": "General",
+                "text": "You have such cute boys right?",
+                "type": "left"
+              },
+              {
+                "sender": "Judge",
+                "text": "No",
+                "type": "left"
+              },
+              {
+                "sender": "Judge",
+                "text": "I",
+                "type": "left"
+              }
+            ],
+            "filters": [
+              {
+                "amount": 70,
+                "stat": "strength",
+                "type": "more"
+              }
+            ],
+            "priority": 0
+          }
+        ]
+      },
+      {
+        "text": "I didn't approve something like that prosecute the process as usual",
+        "outcome": {
+          "happiness": 3
+        }
+      },
+      {
+        "text": "Send the owners  to the mines as workers without trial",
+        "outcome": {
+          "strength": 5
+        }
+      }
+    ],
+    "reactions": [
+      {
+        "sender": "Journalist",
+        "text": "mine",
+        "type": "image"
+      },
+      {
+        "sender": "Journalist",
+        "text": "There was a huge mine disaster",
+        "type": "left"
+      },
+      {
+        "sender": "Journalist",
+        "text": "302 miners died",
+        "type": "left"
+      },
+      {
+        "sender": "Engineer",
+        "text": "I know the mine 😔",
+        "type": "left"
+      },
+      {
+        "sender": "Engineer",
+        "text": "We warned the owner before ",
+        "type": "left"
+      },
+      {
+        "sender": "Engineer",
+        "text": "They didn't care",
+        "type": "left"
+      },
+      {
+        "sender": "Judge",
+        "text": "AND YOU LET THEM BE? 😡",
+        "type": "left"
+      },
+      {
+        "sender": "Engineer",
+        "text": "We were waiting them to fix it in time given in the laws and they kinda gave someone close to us some money",
+        "type": "left"
+      },
+      {
+        "sender": "Representative",
+        "text": "Yeah I remember this",
+        "type": "left"
+      },
+      {
+        "sender": "Judge",
+        "text": "Shit",
+        "type": "left"
+      }
+    ],
+    "filters": [],
+    "priority": 0
+  },
+  {
+    "id": "zf6l5djz5eav5m2c4h28",
+    "answers": [
+      {
+        "text": "I DO THAT IN SHOWER TOO 🤫 I am in",
+        "outcome": {},
+        "nextDialogs": [
+          {
+            "id": "e30v1pjg3950er67dgi6",
+            "answers": [
+              {
+                "text": "Now must we praise , heaven-kingdom's Guardian...",
+                "outcome": {
+                  "civilization": 3,
+                  "religion": 3
+                }
+              },
+              {
+                "text": "They went with songs to the battle, they were young,...",
+                "outcome": {
+                  "strength": 3,
+                  "civilization": 3
+                }
+              },
+              {
+                "text": "and I pace around hungry, sniffing the twilight,  hunting for you, for your hot heart...",
+                "outcome": {
+                  "happiness": 3,
+                  "civilization": 3
+                }
+              }
+            ],
+            "reactions": [
+              {
+                "sender": "Representative",
+                "text": "They want you to read a poem on the show",
+                "type": "left"
+              },
+              {
+                "sender": "Representative",
+                "text": "What kind of poem do you want to read?",
+                "type": "left"
+              },
+              {
+                "sender": "Priest",
+                "text": "Maybe a religious one?",
+                "type": "left"
+              },
+              {
+                "sender": "General",
+                "text": "Why not honor our soldiers?",
+                "type": "left"
+              },
+              {
+                "sender": "Economist",
+                "text": "What about one without a deep meaning?",
+                "type": "left"
+              }
+            ],
+            "filters": [],
+            "priority": 0
+          }
+        ]
+      },
+      {
+        "text": "I don't have time for this  🥱",
+        "outcome": {}
+      }
+    ],
+    "reactions": [
+      {
+        "sender": "Representative",
+        "text": "talkShow",
+        "type": "image"
+      },
+      {
+        "sender": "Representative",
+        "text": "I just recieved a call from the producer of the most popular talk show in our country",
+        "type": "left"
+      },
+      {
+        "sender": "Representative",
+        "text": "They want you to be a guest in a episode",
+        "type": "left"
+      },
+      {
+        "sender": "Chad",
+        "text": "Damn that's cool",
+        "type": "left"
+      },
+      {
+        "sender": "Chad",
+        "text": "I always imagine myself answering questions on that show in the bathroom 😃",
+        "type": "left"
+      },
+      {
+        "sender": "SJW",
+        "text": "and we needed to hear this for what?",
+        "type": "left"
+      },
+      {
+        "sender": "Representative",
+        "text": "Well there is nothing to lose. Why not?",
+        "type": "left"
+      }
+    ],
+    "filters": [],
+    "priority": 0
+  }
+]
