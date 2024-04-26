@@ -31,13 +31,18 @@ export class AnswersComponent implements OnInit {
 
   createNextDialog(answer: Answer): void {
     const wholeHistory = this.oldReactions ? this.oldReactions : [];
+    const usersAnswer = {
+      sender: "player",
+      type: "userDesicion",
+      text: answer.text
+    }
     const newDialog = {
       id: '',
       answers: [],
       reactions: [],
       filters: [],
       priority: 0,
-      oldReactions: [...wholeHistory, ...this.reactions]
+      oldReactions: [...wholeHistory, usersAnswer, ...this.reactions]
     };
     if (answer.nextDialogs) {
       answer.nextDialogs.push(newDialog);
