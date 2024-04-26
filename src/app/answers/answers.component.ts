@@ -1,5 +1,5 @@
-import {Component, Input, OnInit} from '@angular/core';
-import {Answer} from '../dataModels/answer';
+import { Component, Input, OnInit } from '@angular/core';
+import { Answer } from '../dataModels/answer';
 
 @Component({
   selector: 'app-answers',
@@ -13,7 +13,16 @@ export class AnswersComponent implements OnInit {
   }
 
   createAnswer(): void {
-    this.answers.push({text: '', outcome: {}});
+    this.answers.push({
+      text: '', outcome: {
+        economy: 0,
+        strength: 0,
+        happiness: 0,
+        bank: 0,
+        religion: 0,
+        civilization: 0
+      }
+    });
   }
 
   createNextDialog(answer: Answer): void {
