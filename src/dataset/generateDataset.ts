@@ -20,6 +20,8 @@ function saveCSV(path: string, data: any[][]) {
         csvContent += d.join(',') + '\n';
     });
 
+    csvContent = csvContent.replace(/\//g, '');
+
     // Write the CSV content to a file
     fs.writeFile(generateContentDir + path, csvContent, (err: NodeJS.ErrnoException) => {
         if (err) {
@@ -98,6 +100,7 @@ function fixOutcomes(deck: typeof Dialog[]): typeof Dialog[] {
 }
 
 function generateDataset(deck: typeof Dialog[]) {
+
     generateReactions(deck);
 }
 

@@ -2,7 +2,10 @@
   <div style="display: flex; justify-content: space-between">
     <h3>Reactions</h3>
     <button class="btn btn-success" (click)="createReaction()">
-      Create reaction
+      Create
+    </button>
+    <button [disabled]="isGenerating" id="generateReactionButton" class="btn btn-success" (click)="generateReaction()">
+      {{ isGenerating ? 'Generating...' : 'Generate' }}
     </button>
   </div>
   <div *ngFor="let reaction of reactions" style="margin-top: 5px">
@@ -45,12 +48,7 @@
         <div class="input-group-prepend">
           <div class="input-group-text">Text</div>
         </div>
-        <input
-          type="text"
-          placeholder="Enter reaction text"
-          class="form-control"
-          [(ngModel)]="reaction.text"
-        />
+        <input type="text" placeholder="Enter reaction text" class="form-control" [(ngModel)]="reaction.text" />
       </div>
     </div>
   </div>

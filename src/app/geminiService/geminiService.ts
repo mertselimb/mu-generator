@@ -1,26 +1,50 @@
-const { GoogleGenerativeAI } = require("@google/generative-ai");
+import { GoogleGenerativeAI, HarmBlockThreshold, HarmCategory } from "@google/generative-ai";
 import { environment } from '../../environments/environment';
 import { Injectable } from '@angular/core';
-import { Observable } from 'rxjs';
+import prompts from './prompts.json';
+import { HttpClient } from '@angular/common/http';
+import { Reaction } from "../dataModels/reaction";
+
+
 
 @Injectable({
     providedIn: 'root'
 })
 export class GeminiService {
-    const genAI = new GoogleGenerativeAI(environment.geminiApiKey);
+    constructor(private http: HttpClient) { }
 
+    safetySettings = [
+        {
+            category: HarmCategory.HARM_CATEGORY_HARASSMENT,
+            threshold: HarmBlockThreshold.BLOCK_NONE,
+        },
+        {
+            category: HarmCategory.HARM_CATEGORY_HATE_SPEECH,
+            threshold: HarmBlockThreshold.BLOCK_NONE,
+        },
+        {
+            category: HarmCategory.HARM_CATEGORY_DANGEROUS_CONTENT,
+            threshold: HarmBlockThreshold.BLOCK_NONE,
+        },
+        {
+            category: HarmCategory.HARM_CATEGORY_SEXUALLY_EXPLICIT,
+            threshold: HarmBlockThreshold.BLOCK_NONE,
+        }
+    ];
 
-    // Example method for making a POST request to Gemini API
-    generateContent(data: any): Observable<any> {
+    genAI = new GoogleGenerativeAI(environment.geminiApiKey);
 
-        // For text-only input, use the gemini-pro model
-        const model = this.genAI.getGenerativeModel({ model: "gemini-pro" });
-
+    async generateContent(data: any): Promise<any> {
+        const model = this.genAI.getGenerativeModel({ model: "gemini-pro", safetySettings: this.safetySettings });
         const prompt = data
-
         const result = await model.generateContent(prompt);
         const response = await result.response;
-        const text = response.text();
-        console.log(text);
-        return text;
+        return response.text();
     }
+
+    async generateReaction(reactions: String) {
+        const reactionDataset = await this.http.get('assets/reactions.csv', { responseType: 'text' }).toPromise();
+        const response = await this.generateContent(prompts.reaction + reactionDataset + "CURRENT CONVERSATION:" + reactions);
+        return JSON.parse(response);
+    }
+}

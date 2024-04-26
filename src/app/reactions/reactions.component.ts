@@ -1,5 +1,6 @@
-import {Component, Input, OnInit} from '@angular/core';
-import {Reaction} from '../dataModels/reaction';
+import { Component, Input, OnInit } from '@angular/core';
+import { Reaction } from '../dataModels/reaction';
+import { GeminiService } from '../geminiService/geminiService';
 
 @Component({
   selector: 'app-reactions',
@@ -9,14 +10,30 @@ import {Reaction} from '../dataModels/reaction';
 export class ReactionsComponent implements OnInit {
   @Input() reactions: Reaction[] = [];
 
-  constructor() {
+  generatingText = 'Generating...';
+  generateText = 'Generate';
+  isGenerating = false;
+
+  constructor(private geminiService: GeminiService) {
   }
 
   ngOnInit(): void {
   }
 
   createReaction(): void {
-    this.reactions.push({sender: 'Representative', text: '', type: 'left'});
+    this.reactions.push({ sender: 'Representative', text: '', type: 'left' });
+  }
+
+
+  async generateReaction() {
+    this.isGenerating = true;
+    let prompt = JSON.stringify(this.reactions);
+    const newReaction = await this.geminiService.generateReaction(prompt);
+    console.log(newReaction);
+    if (newReaction) {
+      this.reactions.push(newReaction);
+    }
+    this.isGenerating = false;
   }
 
   delete(toBeDeleted: Reaction) {
