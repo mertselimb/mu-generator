@@ -8,7 +8,8 @@
     "gitBuild": "ng build --base-href \"https://mertselimb.github.io/mu-generator/\"",
     "gitPublish": "npx angular-cli-ghpages --dir=dist/mu-generator",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test",
+    "generateDataset": "npx ts-node dataset/generateDataset.ts"
   },
   "private": true,
   "dependencies": {
