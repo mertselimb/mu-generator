@@ -29,8 +29,9 @@
     </div>
   </div>
   <div *ngIf="!isCollapsed">
-    <app-reactions [reactions]="dialog.reactions"></app-reactions>
-    <app-answers [answers]="dialog.answers"></app-answers>
+    <app-reactions [reactions]="dialog.reactions" [oldReactions]="dialog.oldReactions"></app-reactions>
+    <app-answers [answers]="dialog.answers" [oldReactions]="dialog.oldReactions"
+      [reactions]="dialog.reactions"></app-answers>
     <app-filter [filters]="dialog.filters"></app-filter>
   </div>
 </div>

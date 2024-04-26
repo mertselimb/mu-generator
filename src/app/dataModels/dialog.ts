@@ -9,4 +9,5 @@ export interface Dialog {
   filters: Filter[];
   restriction?: string;
   priority?: number;
+  oldReactions?: Reaction[];
 }

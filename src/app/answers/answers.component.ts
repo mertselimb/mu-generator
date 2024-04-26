@@ -1,5 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { Answer } from '../dataModels/answer';
+import { Reaction } from '../dataModels/reaction';
 
 @Component({
   selector: 'app-answers',
@@ -8,6 +9,9 @@ import { Answer } from '../dataModels/answer';
 })
 export class AnswersComponent implements OnInit {
   @Input() answers: Answer[] = [];
+  @Input() reactions: Reaction[] = [];
+  @Input() oldReactions: Reaction[] | undefined = [];
+
 
   ngOnInit(): void {
   }
@@ -26,12 +30,14 @@ export class AnswersComponent implements OnInit {
   }
 
   createNextDialog(answer: Answer): void {
+    const wholeHistory = this.oldReactions ? this.oldReactions : [];
     const newDialog = {
       id: '',
       answers: [],
       reactions: [],
       filters: [],
       priority: 0,
+      oldReactions: [...wholeHistory, ...this.reactions]
     };
     if (answer.nextDialogs) {
       answer.nextDialogs.push(newDialog);

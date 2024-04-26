@@ -1,12 +1,15 @@
 <div style="padding: 8px">
   <div style="display: flex; justify-content: space-between">
     <h3>Reactions</h3>
-    <button class="btn btn-success" (click)="createReaction()">
-      Create
-    </button>
-    <button [disabled]="isGenerating" id="generateReactionButton" class="btn btn-success" (click)="generateReaction()">
-      {{ isGenerating ? 'Generating...' : 'Generate' }}
-    </button>
+    <div> <button class="btn btn-success" (click)="createReaction()">
+        Create
+      </button>
+      <button [disabled]="isGenerating" id="generateReactionButton" class="btn btn-success"
+        (click)="generateReaction()">
+        {{ isGenerating ? 'Generating...' : 'Generate' }}
+      </button>
+    </div>
+
   </div>
   <div *ngFor="let reaction of reactions" style="margin-top: 5px">
     <div class="form-group" style="margin-top: 8px">

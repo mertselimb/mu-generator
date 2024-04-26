@@ -7,17 +7,15 @@ import { GeminiService } from '../geminiService/geminiService';
   templateUrl: './reactions.component.html',
   styleUrls: ['./reactions.component.css'],
 })
-export class ReactionsComponent implements OnInit {
+export class ReactionsComponent {
   @Input() reactions: Reaction[] = [];
+  @Input() oldReactions: Reaction[] | undefined = [];
 
   generatingText = 'Generating...';
   generateText = 'Generate';
   isGenerating = false;
 
   constructor(private geminiService: GeminiService) {
-  }
-
-  ngOnInit(): void {
   }
 
   createReaction(): void {
@@ -27,7 +25,8 @@ export class ReactionsComponent implements OnInit {
 
   async generateReaction() {
     this.isGenerating = true;
-    let prompt = JSON.stringify(this.reactions);
+    const wholeHistory = this.oldReactions ? this.oldReactions : [];
+    const prompt = JSON.stringify([...wholeHistory, ...this.reactions]);
     const newReaction = await this.geminiService.generateReaction(prompt);
     console.log(newReaction);
     if (newReaction) {
