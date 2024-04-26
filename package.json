@@ -9,7 +9,7 @@
     "gitPublish": "npx angular-cli-ghpages --dir=dist/mu-generator",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "generateDataset": "npx ts-node dataset/generateDataset.ts"
+    "generateDataset": "npx ts-node src/dataset/generateDataset.ts"
   },
   "private": true,
   "dependencies": {

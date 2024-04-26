@@ -1,9 +1,9 @@
 import { Dialog } from './dialog';
-import { Stats } from './stats';
+import { Outcome } from './outcome';
 
 export interface Answer {
   text: string;
-  outcome?: Stats;
+  outcome: Outcome;
   end?: boolean;
   endMessage?: string;
   nextDialogs?: Dialog[];

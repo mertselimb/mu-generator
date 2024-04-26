@@ -12,12 +12,7 @@
         <div class="input-group-prepend">
           <div class="input-group-text">Answer</div>
         </div>
-        <input
-          type="text"
-          placeholder="Enter answer text"
-          class="form-control"
-          [(ngModel)]="answer.text"
-        />
+        <input type="text" placeholder="Enter answer text" class="form-control" [(ngModel)]="answer.text" />
         <div class="input-group-append">
           <button class="btn btn-info" (click)="createNextDialog(answer)">
             Create next dialog
@@ -29,104 +24,62 @@
       </div>
     </div>
     <div class="form-group" style="padding: 15px">
-      <div
-        class="input-group"
-        style="margin: 0 0 3px 0"
-        *ngIf="!answer.nextDialogs || answer.nextDialogs.length === 0"
-      >
+      <div class="input-group" style="margin: 0 0 3px 0" *ngIf="!answer.nextDialogs || answer.nextDialogs.length === 0">
         <div class="input-group-prepend">
-          <div>Is this a ending?</div>
+          <div>Is this a ending</div>
         </div>
-        <input
-          style="margin-left: 15px"
-          type="checkbox"
-          [checked]="answer.end"
-          (change)="answer.end = !answer.end"
-        />
+        <input style="margin-left: 15px" type="checkbox" [checked]="answer.end" (change)="answer.end = !answer.end" />
       </div>
       <div class="input-group" style="margin: 0 0 15px 0" *ngIf="answer.end">
         <div class="input-group-prepend">
           <div class="input-group-text">Enter end message</div>
         </div>
-        <input
-          type="text"
-          placeholder="Enter end message"
-          class="form-control"
-          [(ngModel)]="answer.endMessage"
-        />
+        <input type="text" placeholder="Enter end message" class="form-control" [(ngModel)]="answer.endMessage" />
       </div>
       <div *ngIf="(!answer.nextDialogs || answer.nextDialogs.length === 0) && !answer.end">
         <div class="input-group">
           <div class="input-group-prepend">
             <div class="input-group-text">Economy</div>
           </div>
-          <input
-            type="number"
-            placeholder="Enter economy impact"
-            class="form-control"
-            [(ngModel)]="answer.outcome.economy"
-          />
+          <input type="number" placeholder="Enter economy impact" class="form-control"
+            [(ngModel)]="answer.outcome.economy" />
         </div>
         <div class="input-group">
           <div class="input-group-prepend">
             <div class="input-group-text">Strength</div>
           </div>
-          <input
-            type="number"
-            placeholder="Enter strength impact"
-            class="form-control"
-            [(ngModel)]="answer.outcome.strength"
-          />
+          <input type="number" placeholder="Enter strength impact" class="form-control"
+            [(ngModel)]="answer.outcome.strength" />
         </div>
         <div class="input-group">
           <div class="input-group-prepend">
             <div class="input-group-text">Happiness</div>
           </div>
-          <input
-            type="number"
-            placeholder="Enter happiness impact"
-            class="form-control"
-            [(ngModel)]="answer.outcome.happiness"
-          />
+          <input type="number" placeholder="Enter happiness impact" class="form-control"
+            [(ngModel)]="answer.outcome.happiness" />
         </div>
         <div class="input-group">
           <div class="input-group-prepend">
             <div class="input-group-text">Bank</div>
           </div>
-          <input
-            type="number"
-            placeholder="Enter bank impact"
-            class="form-control"
-            [(ngModel)]="answer.outcome.bank"
-          />
+          <input type="number" placeholder="Enter bank impact" class="form-control" [(ngModel)]="answer.outcome.bank" />
         </div>
         <div class="input-group">
           <div class="input-group-prepend">
             <div class="input-group-text">Religion</div>
           </div>
-          <input
-            type="number"
-            placeholder="Enter religion impact"
-            class="form-control"
-            [(ngModel)]="answer.outcome.religion"
-          />
+          <input type="number" placeholder="Enter religion impact" class="form-control"
+            [(ngModel)]="answer.outcome.religion" />
         </div>
         <div class="input-group">
           <div class="input-group-prepend">
             <div class="input-group-text">Civilization</div>
           </div>
-          <input
-            type="number"
-            placeholder="Enter civilization impact"
-            class="form-control"
-            [(ngModel)]="answer.outcome.civilization"
-          />
+          <input type="number" placeholder="Enter civilization impact" class="form-control"
+            [(ngModel)]="answer.outcome.civilization" />
         </div>
       </div>
-      <app-dialogs
-        *ngIf="answer.nextDialogs"
-        [dialogs]="answer.nextDialogs"
-      ></app-dialogs>
+      <app-dialogs *ngIf="answer.nextDialogs" [dialogs]="answer.nextDialogs"></app-dialogs>
     </div>
   </div>
 </div>
