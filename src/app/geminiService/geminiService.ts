@@ -39,12 +39,16 @@ export class GeminiService {
         const prompt = data
         const result = await model.generateContent(prompt);
         const response = await result.response;
-        return response.text();
+
+        try {
+            return JSON.parse(response.text());
+        } catch (error) {
+            return null;
+        }
     }
 
     async generateReaction(reactions: String) {
         const reactionDataset = await this.http.get('assets/reactions.csv', { responseType: 'text' }).toPromise();
-        const response = await this.generateContent(prompts.reaction + reactionDataset + "CURRENT CONVERSATION:" + reactions);
-        return JSON.parse(response);
+        return await this.generateContent(prompts.reaction + reactionDataset + "CURRENT CONVERSATION:" + reactions);
     }
 }
