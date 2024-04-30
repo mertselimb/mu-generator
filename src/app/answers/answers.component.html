@@ -1,9 +1,14 @@
 <div style="padding: 8px">
   <div style="display: flex; justify-content: space-between">
     <h3>Answers</h3>
-    <button class="btn btn-primary" (click)="createAnswer()">
-      Create answer
-    </button>
+    <div> <button class="btn btn-primary" (click)="createAnswer()">
+        Create
+      </button>
+      <button [disabled]="isGenerating" id="generateAnswerButton" class="btn btn-primary" (click)="generateAnswer()">
+        {{ isGenerating ? 'Generating...' : 'Generate' }}
+      </button>
+    </div>
+
   </div>
 
   <div *ngFor="let answer of answers" style="margin-top: 5px">

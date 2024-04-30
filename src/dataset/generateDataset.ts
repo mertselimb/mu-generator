@@ -89,7 +89,12 @@ function generateAnswer(dialog: typeof Dialog): string[][] {
 
     for (let i = 1; i < dialog.answers.length; i++) {
         const answer = dialog.answers[i];
-        answers.push([JSON.stringify({ ...answer, nextDialogs: undefined }), JSON.stringify(pre)]);
+        answers.push([JSON.stringify({
+            ...answer, nextDialogs: undefined,
+            outcome: undefined,
+            end: undefined,
+            endMessage: undefined
+        }), JSON.stringify(pre)]);
         if (answer.nextDialogs) {
             for (let i = 1; i < answer.nextDialogs.length; i++) {
                 answers.push(...generateAnswer(answer.nextDialogs[i]));

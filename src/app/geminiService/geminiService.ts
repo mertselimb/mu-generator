@@ -3,7 +3,6 @@ import { environment } from '../../environments/environment';
 import { Injectable } from '@angular/core';
 import prompts from './prompts.json';
 import { HttpClient } from '@angular/common/http';
-import { Reaction } from "../dataModels/reaction";
 
 
 
@@ -38,17 +37,33 @@ export class GeminiService {
         const model = this.genAI.getGenerativeModel({ model: "gemini-pro", safetySettings: this.safetySettings });
         const prompt = data
         const result = await model.generateContent(prompt);
-        const response = await result.response;
 
         try {
-            return JSON.parse(response.text());
+            return JSON.parse(result.response.text());
         } catch (error) {
+            console.error("Error parsing response from Gemini AI", error, result.response.text());
             return null;
         }
     }
 
-    async generateReaction(reactions: String) {
+    async generateReaction(reactions: string) {
         const reactionDataset = await this.http.get('assets/reactions.csv', { responseType: 'text' }).toPromise();
         return await this.generateContent(prompts.reaction + reactionDataset + "CURRENT CONVERSATION:" + reactions);
+    }
+
+    async generateAnswer(answers: string) {
+        const reactionDataset = await this.http.get('assets/answers.csv', { responseType: 'text' }).toPromise();
+        const response = await this.generateContent(prompts.answer + reactionDataset + "CURRENT CONVERSATION:" + answers);
+        if (response) {
+            response.outcome = {
+                economy: 0,
+                strength: 0,
+                happiness: 0,
+                bank: 0,
+                religion: 0,
+                civilization: 0
+            }
+        }
+        return response;
     }
 }

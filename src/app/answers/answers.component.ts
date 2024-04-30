@@ -1,19 +1,24 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { Answer } from '../dataModels/answer';
 import { Reaction } from '../dataModels/reaction';
+import { GeminiService } from '../geminiService/geminiService';
 
 @Component({
   selector: 'app-answers',
   templateUrl: './answers.component.html',
   styleUrls: ['./answers.component.css'],
 })
-export class AnswersComponent implements OnInit {
+export class AnswersComponent {
   @Input() answers: Answer[] = [];
   @Input() reactions: Reaction[] = [];
   @Input() oldReactions: Reaction[] | undefined = [];
 
+  generatingText = 'Generating...';
+  generateText = 'Generate';
+  isGenerating = false;
 
-  ngOnInit(): void {
+
+  constructor(private geminiService: GeminiService) {
   }
 
   createAnswer(): void {
@@ -28,6 +33,22 @@ export class AnswersComponent implements OnInit {
       }
     });
   }
+
+  async generateAnswer() {
+
+    this.isGenerating = true;
+
+    const wholeHistory = this.oldReactions ? this.oldReactions : [];
+    const prompt = JSON.stringify([...wholeHistory, ...this.reactions]);
+    const newAnswer = await this.geminiService.generateAnswer(prompt);
+    console.log(newAnswer);
+    if (newAnswer) {
+      this.answers.push(newAnswer);
+    }
+
+    this.isGenerating = false;
+  }
+
 
   createNextDialog(answer: Answer): void {
     const wholeHistory = this.oldReactions ? this.oldReactions : [];
