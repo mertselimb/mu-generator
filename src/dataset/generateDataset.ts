@@ -1,3 +1,5 @@
+import { generate } from "rxjs";
+
 const Dialog = require("../app/dataModels/dialog");
 const Answer = require("../app/dataModels/answer");
 const Outcome = require("../app/dataModels/outcome");
@@ -27,11 +29,10 @@ function saveCSV(path: string, data: any[][]) {
         if (err) {
             console.error('Error creating CSV file:', err);
         } else {
-            console.log('CSV file created successfully!');
+            console.log(`${path} created successfully!`);
         }
     });
 }
-
 function saveDeck(deck: typeof Dialog[]) {
     fs.writeFile(generateContentDir + 'deck.json', JSON.stringify(deck), (err: NodeJS.ErrnoException) => {
         if (err) {
@@ -41,22 +42,65 @@ function saveDeck(deck: typeof Dialog[]) {
         }
     });
 }
-
 function generateReactions(deck: typeof Dialog[]) {
     const reactions: string[][] = [];
-    deck.forEach((dialog) => {
-        let preReactions = JSON.stringify(dialog.reactions[0]);
-        for (let i = 1; i < dialog.reactions.length; i++) {
-            const reaction = dialog.reactions[i];
-            reactions.push([JSON.stringify(reaction), JSON.stringify(preReactions)]);
-            preReactions += JSON.stringify(reaction);
-        }
-
+    deck.map((dialog) => {
+        reactions.push(...generateReaction(dialog));
     });
 
     saveCSV('reactions.csv', reactions);
-
 }
+
+function generateReaction(dialog: typeof Dialog): string[][] {
+    let preReactions = JSON.stringify(dialog.reactions[0]);
+    const reactions: string[][] = [];
+    for (let i = 1; i < dialog.reactions.length; i++) {
+        const reaction = dialog.reactions[i];
+        reactions.push([JSON.stringify(reaction), JSON.stringify(preReactions)]);
+        preReactions += JSON.stringify(reaction);
+    }
+
+    for (let i = 1; i < dialog.answers.length; i++) {
+        const answer = dialog.answers[i];
+        if (answer.nextDialogs) {
+            for (let i = 1; i < answer.nextDialogs.length; i++) {
+                const nextDialog = answer.nextDialogs[i];
+                reactions.push(...generateReaction(nextDialog));
+            }
+        }
+    }
+
+    return reactions;
+}
+
+
+function generateAnswers(deck: typeof Dialog[]) {
+    const reactions: string[][] = [];
+    deck.map((dialog) => {
+        reactions.push(...generateAnswer(dialog));
+    });
+
+    saveCSV('answers.csv', reactions);
+}
+
+function generateAnswer(dialog: typeof Dialog): string[][] {
+    let pre = JSON.stringify(dialog.reactions);
+    const answers: string[][] = [];
+
+    for (let i = 1; i < dialog.answers.length; i++) {
+        const answer = dialog.answers[i];
+        answers.push([JSON.stringify({ ...answer, nextDialogs: undefined }), JSON.stringify(pre)]);
+        if (answer.nextDialogs) {
+            for (let i = 1; i < answer.nextDialogs.length; i++) {
+                answers.push(...generateAnswer(answer.nextDialogs[i]));
+            }
+        }
+    }
+
+    return answers;
+}
+
+
 
 function fixFilter(dialog: typeof Dialog) {
     if (!dialog.filters) {
@@ -71,13 +115,11 @@ function fixFilter(dialog: typeof Dialog) {
 
     return dialog;
 };
-
 function fixFilters(deck: typeof Dialog[]): typeof Dialog[] {
     return deck.map((dialog) => {
         return fixFilter(dialog);
     });
 }
-
 function fixOutcome(dialog: typeof Dialog) {
     dialog.answers = dialog.answers.map((answer: typeof Answer) => {
         if (!answer.outcome) {
@@ -98,21 +140,15 @@ function fixOutcomes(deck: typeof Dialog[]): typeof Dialog[] {
         return fixOutcome(dialog);
     });
 }
-
 function generateDataset(deck: typeof Dialog[]) {
-
     generateReactions(deck);
+    generateAnswers(deck);
 }
-
 function fixDeck(deck: typeof Dialog[]) {
     let newDeck = fixFilters(deck)
     newDeck = fixOutcomes(newDeck);
     saveDeck(newDeck);
 }
-
-
-
-
 generateDataset(deck);
 
 
