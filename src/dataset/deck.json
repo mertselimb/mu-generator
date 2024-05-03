@@ -5101,5 +5101,389 @@
         ],
         "filters": [],
         "priority": 0
+    },
+    {
+        "id": "zc6lh7ysnj97ycr7b38p",
+        "answers": [
+            {
+                "text": "Its the parents fault and our schools fault. We need stricter measures to teach them work.",
+                "outcome": {
+                    "economy": 0,
+                    "strength": 0,
+                    "happiness": 0,
+                    "bank": 0,
+                    "religion": 0,
+                    "civilization": 0
+                },
+                "nextDialogs": [
+                    {
+                        "id": "pbhgecc5u6ich48itvf0",
+                        "answers": [
+                            {
+                                "text": "I agree, we need force them",
+                                "type": "right",
+                                "outcome": {
+                                    "economy": 5,
+                                    "strength": 5,
+                                    "happiness": -5,
+                                    "bank": 0,
+                                    "religion": 0,
+                                    "civilization": -5
+                                }
+                            },
+                            {
+                                "text": "It is against the Book of Mu to force education.",
+                                "outcome": {
+                                    "economy": 0,
+                                    "strength": 0,
+                                    "happiness": 0,
+                                    "bank": 0,
+                                    "religion": 5,
+                                    "civilization": 0
+                                }
+                            },
+                            {
+                                "text": "I don't think forcing them is the answer. We need to find better ways to make the people happier.",
+                                "outcome": {
+                                    "economy": 3,
+                                    "strength": 0,
+                                    "happiness": 5,
+                                    "bank": 0,
+                                    "religion": 0,
+                                    "civilization": 0
+                                }
+                            },
+                            {
+                                "text": "Education is important sure but we need to focus what is important. We need a generation that can work not speak about philosophies.",
+                                "outcome": {
+                                    "economy": 0,
+                                    "strength": 0,
+                                    "happiness": 0,
+                                    "bank": 0,
+                                    "religion": 0,
+                                    "civilization": 0
+                                },
+                                "nextDialogs": [
+                                    {
+                                        "id": "kbn01vizdlon2jyht7vy",
+                                        "answers": [
+                                            {
+                                                "text": "We need start teaching kids how to get their hands dirty.",
+                                                "outcome": {
+                                                    "economy": 5,
+                                                    "strength": 0,
+                                                    "happiness": 0,
+                                                    "bank": 0,
+                                                    "religion": 0,
+                                                    "civilization": 0
+                                                }
+                                            },
+                                            {
+                                                "text": "Ok we can open trade schools and recruit people to go there. Let's also improve current trade school eduation.",
+                                                "outcome": {
+                                                    "economy": 5,
+                                                    "strength": 0,
+                                                    "happiness": 5,
+                                                    "bank": 0,
+                                                    "religion": 0,
+                                                    "civilization": 0
+                                                }
+                                            },
+                                            {
+                                                "text": "Well if they dont want to work we will force them 😈 Let's call it after school EDUCATION!",
+                                                "type": "left",
+                                                "outcome": {
+                                                    "economy": 5,
+                                                    "strength": 5,
+                                                    "happiness": -5,
+                                                    "bank": 0,
+                                                    "religion": 0,
+                                                    "civilization": -10
+                                                }
+                                            }
+                                        ],
+                                        "reactions": [
+                                            {
+                                                "sender": "Representative",
+                                                "text": "Then what do we do?",
+                                                "type": "left"
+                                            }
+                                        ],
+                                        "filters": [],
+                                        "priority": 0,
+                                        "oldReactions": [
+                                            {
+                                                "sender": "player",
+                                                "type": "userDesicion",
+                                                "text": "Its the parents fault and our schools fault. We need stricter measures to teach them work."
+                                            },
+                                            {
+                                                "sender": "Representative",
+                                                "text": "People dont want to work.",
+                                                "type": "left"
+                                            },
+                                            {
+                                                "sender": "Representative",
+                                                "text": "The kid are just hate working these days.",
+                                                "type": "left"
+                                            },
+                                            {
+                                                "sender": "Teacher",
+                                                "text": "Thats sounds so wrong.",
+                                                "type": "left"
+                                            },
+                                            {
+                                                "sender": "Janitor",
+                                                "text": "Maybe they actually do work?",
+                                                "type": "left"
+                                            },
+                                            {
+                                                "sender": "Economist",
+                                                "text": "Maybe they dont get paid enough?",
+                                                "type": "left"
+                                            },
+                                            {
+                                                "sender": "player",
+                                                "type": "userDesicion",
+                                                "text": "Education is important sure but we need to focus what is important. We need a generation that can work not speak about philosophies."
+                                            },
+                                            {
+                                                "sender": "Teacher",
+                                                "text": "Stricter measures will not help.",
+                                                "type": "left"
+                                            },
+                                            {
+                                                "sender": "Teacher",
+                                                "text": "We need to force them",
+                                                "type": "left"
+                                            },
+                                            {
+                                                "sender": "Economist",
+                                                "text": "Stricter measures will not help. Education is the key.",
+                                                "type": "left"
+                                            },
+                                            {
+                                                "sender": "Teacher",
+                                                "text": "We need to force education on them",
+                                                "type": "left"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ],
+                        "reactions": [
+                            {
+                                "sender": "Teacher",
+                                "text": "Stricter measures will not help.",
+                                "type": "left"
+                            },
+                            {
+                                "sender": "Teacher",
+                                "text": "We need to force them",
+                                "type": "left"
+                            },
+                            {
+                                "sender": "Economist",
+                                "text": "Stricter measures will not help. Education is the key.",
+                                "type": "left"
+                            },
+                            {
+                                "sender": "Teacher",
+                                "text": "We need to force education on them",
+                                "type": "left"
+                            }
+                        ],
+                        "filters": [],
+                        "priority": 0,
+                        "oldReactions": [
+                            {
+                                "sender": "player",
+                                "type": "userDesicion",
+                                "text": "Its the parents fault and our schools fault. We need stricter measures to teach them work."
+                            },
+                            {
+                                "sender": "Representative",
+                                "text": "People dont want to work.",
+                                "type": "left"
+                            },
+                            {
+                                "sender": "Representative",
+                                "text": "The kid are just hate working these days.",
+                                "type": "left"
+                            },
+                            {
+                                "sender": "Teacher",
+                                "text": "Thats sounds so wrong.",
+                                "type": "left"
+                            },
+                            {
+                                "sender": "Janitor",
+                                "text": "Maybe they actually do work?",
+                                "type": "left"
+                            },
+                            {
+                                "sender": "Economist",
+                                "text": "Maybe they dont get paid enough?",
+                                "type": "left"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "text": "What if we lower taxes and let them breathe a little?",
+                "outcome": {
+                    "economy": 5,
+                    "strength": -3,
+                    "happiness": 5,
+                    "bank": 0,
+                    "religion": 0,
+                    "civilization": 0
+                }
+            },
+            {
+                "text": "They are right. Lets make it illegal to not be employed",
+                "outcome": {
+                    "economy": 0,
+                    "strength": 0,
+                    "happiness": 0,
+                    "bank": 0,
+                    "religion": 0,
+                    "civilization": 0
+                },
+                "nextDialogs": [
+                    {
+                        "id": "0a2lpn8f1788mguzcjl6",
+                        "answers": [
+                            {
+                                "text": "Yeah lets just imprison them",
+                                "outcome": {
+                                    "economy": -3,
+                                    "strength": 5,
+                                    "happiness": -10,
+                                    "bank": 0,
+                                    "religion": 0,
+                                    "civilization": -10
+                                }
+                            },
+                            {
+                                "text": "I also think this is a terrible idea.",
+                                "outcome": {
+                                    "economy": 0,
+                                    "strength": 0,
+                                    "happiness": 0,
+                                    "bank": 0,
+                                    "religion": 0,
+                                    "civilization": 0
+                                }
+                            },
+                            {
+                                "text": "Lock them up and make them work in prison camps until they learn to love to work.",
+                                "outcome": {
+                                    "economy": 5,
+                                    "strength": 5,
+                                    "happiness": -10,
+                                    "bank": 0,
+                                    "religion": 0,
+                                    "civilization": -10
+                                }
+                            }
+                        ],
+                        "reactions": [
+                            {
+                                "sender": "Chad",
+                                "text": "I think it's a great idea!",
+                                "type": "left"
+                            },
+                            {
+                                "sender": "Teacher",
+                                "text": "It is not good to think like that",
+                                "type": "left"
+                            },
+                            {
+                                "sender": "SJW",
+                                "text": "It's a terrible idea.",
+                                "type": "left"
+                            },
+                            {
+                                "sender": "Economist",
+                                "text": "What are we going to do with all these unemployed people?",
+                                "type": "left"
+                            }
+                        ],
+                        "filters": [],
+                        "priority": 0,
+                        "oldReactions": [
+                            {
+                                "sender": "player",
+                                "type": "userDesicion",
+                                "text": "They are right. Lets make it illegal to not be employed"
+                            },
+                            {
+                                "sender": "Representative",
+                                "text": "People dont want to work.",
+                                "type": "left"
+                            },
+                            {
+                                "sender": "Representative",
+                                "text": "The kid are just hate working these days.",
+                                "type": "left"
+                            },
+                            {
+                                "sender": "Teacher",
+                                "text": "Thats sounds so wrong.",
+                                "type": "left"
+                            },
+                            {
+                                "sender": "Janitor",
+                                "text": "Maybe they actually do work?",
+                                "type": "left"
+                            },
+                            {
+                                "sender": "Economist",
+                                "text": "Maybe they dont get paid enough?",
+                                "type": "left"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "reactions": [
+            {
+                "sender": "Representative",
+                "text": "People dont want to work.",
+                "type": "left"
+            },
+            {
+                "sender": "Representative",
+                "text": "The kid are just hate working these days.",
+                "type": "left"
+            },
+            {
+                "sender": "Teacher",
+                "text": "Thats sounds so wrong.",
+                "type": "left"
+            },
+            {
+                "sender": "Janitor",
+                "text": "Maybe they actually do work?",
+                "type": "left"
+            },
+            {
+                "sender": "Economist",
+                "text": "Maybe they dont get paid enough?",
+                "type": "left"
+            }
+        ],
+        "filters": [
+            {
+                "amount": 30,
+                "stat": "happiness",
+                "type": "less"
+            }
+        ],
+        "priority": 0
     }
 ]
