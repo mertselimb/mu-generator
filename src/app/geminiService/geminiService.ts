@@ -54,16 +54,6 @@ export class GeminiService {
     async generateAnswer(answers: string) {
         const reactionDataset = await this.http.get('assets/answers.csv', { responseType: 'text' }).toPromise();
         const response = await this.generateContent(prompts.answer + reactionDataset + "CURRENT CONVERSATION:" + answers);
-        if (response) {
-            response.outcome = {
-                economy: 0,
-                strength: 0,
-                happiness: 0,
-                bank: 0,
-                religion: 0,
-                civilization: 0
-            }
-        }
         return response;
     }
 }

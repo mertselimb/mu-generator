@@ -91,7 +91,6 @@ function generateAnswer(dialog: typeof Dialog): string[][] {
         const answer = dialog.answers[i];
         answers.push([JSON.stringify({
             ...answer, nextDialogs: undefined,
-            outcome: undefined,
             end: undefined,
             endMessage: undefined
         }), JSON.stringify(pre)]);
