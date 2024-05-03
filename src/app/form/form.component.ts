@@ -1,33 +1,30 @@
-import {ClipboardService} from 'ngx-clipboard';
-import {Component, OnInit} from '@angular/core';
-import {Dialog} from '../dataModels/dialog';
+import { ClipboardService } from 'ngx-clipboard';
+import { Component } from '@angular/core';
+import { Dialog } from '../dataModels/dialog';
 
 @Component({
   selector: 'app-form',
   templateUrl: './form.component.html',
   styleUrls: ['./form.component.css'],
 })
-export class FormComponent implements OnInit {
+export class FormComponent {
   dialogs: Dialog[];
   dialogJson: string = '';
 
   constructor(private clipboardApi: ClipboardService) {
     this.dialogs = [
-      {id: '', answers: [], reactions: [], filters: [], priority: 0},
+      { id: '', answers: [], reactions: [], filters: [], priority: 0 },
     ]
   }
 
-  ngOnInit(): void {
-  }
-
   logDialog(): void {
-    const jsonArray = JSON.stringify(this.dialogs);
+    const jsonArray = JSON.stringify(this.dialogs[0]);
     this.dialogJson = jsonArray;
     this.copyStr(jsonArray);
   }
 
   setJSON(): void {
-    this.dialogs = JSON.parse(this.dialogJson);
+    this.dialogs = [JSON.parse(this.dialogJson)];
   }
 
   copyStr(str: string) {
