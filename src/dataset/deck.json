@@ -5485,5 +5485,421 @@
             }
         ],
         "priority": 0
+    },
+    {
+        "id": "4ttuggd8zibjfmbauiej",
+        "answers": [
+            {
+                "text": "This is a new type of art. We need to embrace it",
+                "outcome": {
+                    "economy": 3,
+                    "strength": 0,
+                    "happiness": 0,
+                    "bank": 0,
+                    "religion": 0,
+                    "civilization": 3
+                }
+            },
+            {
+                "text": "We should not allow this at all. No art app can ever replace real art",
+                "outcome": {
+                    "economy": -3,
+                    "strength": 0,
+                    "happiness": 0,
+                    "bank": 0,
+                    "religion": 0,
+                    "civilization": -3
+                }
+            }
+        ],
+        "reactions": [
+            {
+                "sender": "Journalist",
+                "text": "There was a digital art competition",
+                "type": "left"
+            },
+            {
+                "sender": "Chad",
+                "text": "I know I know",
+                "type": "left"
+            },
+            {
+                "sender": "Chad",
+                "text": "Someone won it with a AI generated image",
+                "type": "left"
+            },
+            {
+                "sender": "Journalist",
+                "text": "Do you really have to cut me off like this?",
+                "type": "left"
+            },
+            {
+                "sender": "Journalist",
+                "text": "I wanted to talk about how unfair it is",
+                "type": "left"
+            }
+        ],
+        "filters": [],
+        "priority": 0
+    },
+    {
+        "id": "a1ukoitt86d50ph54lcy",
+        "answers": [
+            {
+                "text": "I believe we can't play God.",
+                "outcome": {
+                    "economy": -3,
+                    "strength": 0,
+                    "happiness": 0,
+                    "bank": 0,
+                    "religion": -3,
+                    "civilization": 3
+                }
+            },
+            {
+                "text": "I think we can start by researching the effects of creating designer babies.",
+                "outcome": {
+                    "economy": 0,
+                    "strength": 0,
+                    "happiness": 3,
+                    "bank": 0,
+                    "religion": 1,
+                    "civilization": 0
+                }
+            },
+            {
+                "text": "I think it is a great idea",
+                "outcome": {
+                    "economy": 0,
+                    "strength": 0,
+                    "happiness": 0,
+                    "bank": 0,
+                    "religion": 0,
+                    "civilization": 0
+                },
+                "nextDialogs": [
+                    {
+                        "id": "2ud9kbnag7oca95cds22",
+                        "answers": [
+                            {
+                                "text": "We shouldn't  waste money and energy on this",
+                                "outcome": {
+                                    "economy": 0,
+                                    "strength": 0,
+                                    "happiness": 0,
+                                    "bank": 0,
+                                    "religion": 0,
+                                    "civilization": -3
+                                }
+                            },
+                            {
+                                "text": "We should do this. How do we finance it?",
+                                "outcome": {
+                                    "economy": 0,
+                                    "strength": 0,
+                                    "happiness": 0,
+                                    "bank": 0,
+                                    "religion": 0,
+                                    "civilization": 0
+                                },
+                                "nextDialogs": [
+                                    {
+                                        "id": "7mcgi3ulkmtf0n1ym9bn",
+                                        "answers": [
+                                            {
+                                                "text": "We need to finance this by taxing the rich",
+                                                "outcome": {
+                                                    "economy": -3,
+                                                    "strength": 0,
+                                                    "happiness": 6,
+                                                    "bank": -5,
+                                                    "religion": 0,
+                                                    "civilization": 0
+                                                }
+                                            },
+                                            {
+                                                "text": "It is clear that we need to act fast. Rich gets to be first.",
+                                                "outcome": {
+                                                    "economy": 5,
+                                                    "strength": 0,
+                                                    "happiness": -5,
+                                                    "bank": 0,
+                                                    "religion": -5,
+                                                    "civilization": 5
+                                                }
+                                            },
+                                            {
+                                                "text": "Let's wait for regulations and money to get to the level we need",
+                                                "outcome": {
+                                                    "economy": 0,
+                                                    "strength": 0,
+                                                    "happiness": 5,
+                                                    "bank": 0,
+                                                    "religion": -5,
+                                                    "civilization": 0
+                                                }
+                                            },
+                                            {
+                                                "text": "It should be free!",
+                                                "outcome": {
+                                                    "economy": -20,
+                                                    "strength": 0,
+                                                    "happiness": 5,
+                                                    "bank": 0,
+                                                    "religion": -5,
+                                                    "civilization": 5
+                                                }
+                                            },
+                                            {
+                                                "text": "I WILL PAY FOR IT. IT IS FREE!",
+                                                "outcome": {
+                                                    "economy": 0,
+                                                    "strength": 0,
+                                                    "happiness": 10,
+                                                    "bank": -30,
+                                                    "religion": -10,
+                                                    "civilization": 5
+                                                }
+                                            }
+                                        ],
+                                        "reactions": [
+                                            {
+                                                "sender": "SJW",
+                                                "text": "This is so wrong. This will create inequality between normal and designer babies",
+                                                "type": "left"
+                                            },
+                                            {
+                                                "sender": "Dr",
+                                                "text": "Oh shut up you are just saying the same thing over and over",
+                                                "type": "left"
+                                            },
+                                            {
+                                                "sender": "General",
+                                                "text": "Lets make a wait list and only let people who can pay get in!",
+                                                "type": "left"
+                                            },
+                                            {
+                                                "sender": "Judge",
+                                                "text": "or we can wait for the money then make it available to everyone?",
+                                                "type": "left"
+                                            },
+                                            {
+                                                "sender": "Economist",
+                                                "text": "This will be costly and if we wait it will be too slow. ",
+                                                "type": "left"
+                                            },
+                                            {
+                                                "sender": "Economist",
+                                                "text": "We may lose our chances to be the first",
+                                                "type": "left"
+                                            },
+                                            {
+                                                "sender": "Dr",
+                                                "text": "That is true",
+                                                "type": "left"
+                                            },
+                                            {
+                                                "sender": "Judge",
+                                                "text": "It is also true if we are too fast and do things without regulation we will hit some walls",
+                                                "type": "left"
+                                            },
+                                            {
+                                                "sender": "Dr",
+                                                "text": "That is also true",
+                                                "type": "left"
+                                            }
+                                        ],
+                                        "filters": [],
+                                        "priority": 0,
+                                        "oldReactions": [
+                                            {
+                                                "sender": "player",
+                                                "type": "userDesicion",
+                                                "text": "I think it is a great idea"
+                                            },
+                                            {
+                                                "sender": "Dr",
+                                                "text": "We need to start creating designer babies",
+                                                "type": "left"
+                                            },
+                                            {
+                                                "sender": "Priest",
+                                                "text": "That is very dangerous. Designing babies are very unethical.",
+                                                "type": "left"
+                                            },
+                                            {
+                                                "sender": "Dr",
+                                                "text": "I think it is time",
+                                                "type": "left"
+                                            },
+                                            {
+                                                "sender": "Priest",
+                                                "text": "Once we go down that path there will be no return",
+                                                "type": "left"
+                                            },
+                                            {
+                                                "sender": "Economist",
+                                                "text": "It will take lots of money to create designer babies",
+                                                "type": "left"
+                                            },
+                                            {
+                                                "sender": "SJW",
+                                                "text": " This is so wrong. This will create inequality between normal and designer babies",
+                                                "type": "left"
+                                            },
+                                            {
+                                                "sender": "General",
+                                                "text": "If this happens.  Our children should be first! Of course after some test babies.",
+                                                "type": "left"
+                                            },
+                                            {
+                                                "sender": "player",
+                                                "type": "userDesicion",
+                                                "text": "We should do this. How do we finance it?"
+                                            },
+                                            {
+                                                "sender": "Priest",
+                                                "text": "This is so dangerous. This is blashemous!",
+                                                "type": "left"
+                                            },
+                                            {
+                                                "sender": "Judge",
+                                                "text": "This can lead a lot of ethical questions.",
+                                                "type": "left"
+                                            },
+                                            {
+                                                "sender": "Economist",
+                                                "text": "WE WILL MAKE SO MUCH MONEY ON THIS",
+                                                "type": "left"
+                                            },
+                                            {
+                                                "sender": "SJW",
+                                                "text": "I can't understand why someone would create designer babies. This is unfair 🤮",
+                                                "type": "left"
+                                            },
+                                            {
+                                                "sender": "Dr",
+                                                "text": "SO if a baby supposed to die from cancer at birth we should just let them. Right?",
+                                                "type": "left"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ],
+                        "reactions": [
+                            {
+                                "sender": "Priest",
+                                "text": "This is so dangerous. This is blashemous!",
+                                "type": "left"
+                            },
+                            {
+                                "sender": "Judge",
+                                "text": "This can lead a lot of ethical questions.",
+                                "type": "left"
+                            },
+                            {
+                                "sender": "Economist",
+                                "text": "WE WILL MAKE SO MUCH MONEY ON THIS",
+                                "type": "left"
+                            },
+                            {
+                                "sender": "SJW",
+                                "text": "I can't understand why someone would create designer babies. This is unfair 🤮",
+                                "type": "left"
+                            },
+                            {
+                                "sender": "Dr",
+                                "text": "SO if a baby supposed to die from cancer at birth we should just let them. Right?",
+                                "type": "left"
+                            }
+                        ],
+                        "filters": [],
+                        "priority": 0,
+                        "oldReactions": [
+                            {
+                                "sender": "player",
+                                "type": "userDesicion",
+                                "text": "I think it is a great idea"
+                            },
+                            {
+                                "sender": "Dr",
+                                "text": "We need to start creating designer babies",
+                                "type": "left"
+                            },
+                            {
+                                "sender": "Priest",
+                                "text": "That is very dangerous. Designing babies are very unethical.",
+                                "type": "left"
+                            },
+                            {
+                                "sender": "Dr",
+                                "text": "I think it is time",
+                                "type": "left"
+                            },
+                            {
+                                "sender": "Priest",
+                                "text": "Once we go down that path there will be no return",
+                                "type": "left"
+                            },
+                            {
+                                "sender": "Economist",
+                                "text": "It will take lots of money to create designer babies",
+                                "type": "left"
+                            },
+                            {
+                                "sender": "SJW",
+                                "text": " This is so wrong. This will create inequality between normal and designer babies",
+                                "type": "left"
+                            },
+                            {
+                                "sender": "General",
+                                "text": "If this happens.  Our children should be first! Of course after some test babies.",
+                                "type": "left"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "reactions": [
+            {
+                "sender": "Dr",
+                "text": "We need to start creating designer babies",
+                "type": "left"
+            },
+            {
+                "sender": "Priest",
+                "text": "That is very dangerous. Designing babies are very unethical.",
+                "type": "left"
+            },
+            {
+                "sender": "Dr",
+                "text": "I think it is time",
+                "type": "left"
+            },
+            {
+                "sender": "Priest",
+                "text": "Once we go down that path there will be no return",
+                "type": "left"
+            },
+            {
+                "sender": "Economist",
+                "text": "It will take lots of money to create designer babies",
+                "type": "left"
+            },
+            {
+                "sender": "SJW",
+                "text": " This is so wrong. This will create inequality between normal and designer babies",
+                "type": "left"
+            },
+            {
+                "sender": "General",
+                "text": "If this happens.  Our children should be first! Of course after some test babies.",
+                "type": "left"
+            }
+        ],
+        "filters": [],
+        "priority": 0
     }
 ]
