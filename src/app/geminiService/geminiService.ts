@@ -34,7 +34,7 @@ export class GeminiService {
     genAI = new GoogleGenerativeAI(environment.geminiApiKey);
 
     async generateContent(data: any): Promise<any> {
-        const model = this.genAI.getGenerativeModel({ model: "gemini-pro", safetySettings: this.safetySettings });
+        const model = this.genAI.getGenerativeModel({ model: "gemini-1.5-flash", safetySettings: this.safetySettings });
         const prompt = data
         const result = await model.generateContent(prompt);
 
